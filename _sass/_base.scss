@@ -222,12 +222,12 @@ header {
     }
 }
 
-.portfolio-box {
+.meet-us-box {
     position: relative;
     display: block;
     max-width: 650px;
     margin: 0 auto;
-    .portfolio-box-caption {
+    .meet-us-box-caption {
         color: white;
         opacity: 0;
         display: block;
@@ -238,7 +238,7 @@ header {
         width: 100%;
         height: 100%;
         @include transition-all;
-        .portfolio-box-caption-content {
+        .meet-us-box-caption-content {
             width: 100%;
             text-align: center;
             position: absolute;
@@ -260,13 +260,13 @@ header {
         }
     }
     &:hover {
-        .portfolio-box-caption {
+        .meet-us-box-caption {
             opacity: 1;
         }
     }
     @media (min-width: 768px) {
-        .portfolio-box-caption {
-            .portfolio-box-caption-content {
+        .meet-us-box-caption {
+            .meet-us-box-caption-content {
                 .project-category {
                     font-size: 16px;
                 }
