@@ -1,12 +1,14 @@
-# Site settings
-title:
+title: JB Long and Son Body Shop
+
 email:
-description: > # this means to ignore newlines until "baseurl:"
+
+description: Description of JB Long and Son Body Shop.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
+
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: MaLong29
+github_username: mtlong29
 
-# Build settings
 markdown: kramdown
