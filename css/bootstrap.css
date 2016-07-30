@@ -1375,12 +1375,6 @@ a.bg-success:hover {
 a.bg-info:hover {
   background-color: #afd9ee;
 }
-.bg-matthew-contact {
-  background-color: #00FF00;
-}
-a.bg-matthew-contact:hover {
-  background-color: #00FF00;
-}
 .bg-warning {
   background-color: #fcf8e3;
 }
