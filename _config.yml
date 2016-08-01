@@ -9,6 +9,18 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "" # the base hostname & protocol for your site
 
+defaults:
+  - scope:
+      path: _posts
+      type: get-to-know-us
+    values:
+      layout: get-to-know-us
+  - scope:
+      path: _posts
+      type: before-and-after
+    values:
+      layout: before-and-after-archive
+
 twitter_username: MaLong29
 github_username: mtlong29
 
