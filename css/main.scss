@@ -17,8 +17,11 @@ $theme-light-blue: #5E70BA;
 $theme-dark-gray: #6F7176;
 $theme-light-gray: #79809F;
 $theme-white: #fdfdfd;
+$theme-black: #000000;
 
-$text-color: #111111;
+$text-black: #000000;
+$text-white: #fdfdfd;
+$text-gray: #6F7176;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

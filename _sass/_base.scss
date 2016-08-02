@@ -357,8 +357,16 @@ header {
 }
 
 // Bootstrap Overrides
-.text-primary {
+.text-dark-blue {
     color: $theme-dark-blue;
+}
+
+.text-white {
+    color: $text-white;
+}
+
+.text-gray {
+    color: $text-gray;
 }
 
 .no-gutter > [class*='col-'] {
