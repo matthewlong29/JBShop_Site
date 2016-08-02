@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: $theme-dark-blue;
     border-width: 3px;
     max-width: 50px;
 }
@@ -20,10 +20,10 @@ hr.light {
 
 a {
     @include transition-all;
-    color: $theme-primary;
+    color: $theme-dark-blue;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($theme-dark-blue, 10%);
     }
 }
 
@@ -43,16 +43,20 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $theme-dark-blue;
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: $theme-dark-gray;
     color: white;
 }
 
 .bg-primary-alt {
-    background-color: $theme-primary-alt;
+    background-color: $theme-light-gray;
+}
+
+.bg-white {
+    background-color: $theme-white;
 }
 
 .text-faded {
@@ -71,21 +75,29 @@ aside {
     padding: 0;
 }
 
+.small-margin-bottom {
+    margin-bottom: -50px;
+}
+
+.small-margin-top {
+    margin-top: -50px;
+}
+
 // Navigation
 
 .navbar-default {
     background-color: white;
-    border-color: rgba($theme-dark, .5);
+    border-color: rgba($theme-dark-gray, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $theme-dark-blue;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-dark-blue, 10%);
         }
     }
     .nav {
@@ -95,15 +107,15 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: $theme-light-gray;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-dark-blue;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $theme-dark-blue !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -131,20 +143,20 @@ aside {
         }
         &.affix {
             background-color: white;
-            border-color: rgba($theme-dark, .5);
+            border-color: rgba($theme-dark-gray, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: $theme-dark-blue;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($theme-dark-blue, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $theme-dark-gray;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-dark-blue;
                 }
             }
         }
@@ -235,7 +247,7 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $theme-dark-blue, .9 );
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -291,7 +303,7 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $theme-dark-blue, .9 );
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -346,7 +358,7 @@ header {
 
 // Bootstrap Overrides
 .text-primary {
-    color: $theme-primary;
+    color: $theme-dark-blue;
 }
 
 .no-gutter > [class*='col-'] {
@@ -356,11 +368,11 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($theme-dark-gray, white, white);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(white, $theme-dark-blue, $theme-dark-blue);
 }
 
 .btn {
@@ -377,7 +389,7 @@ header {
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
+    color: $theme-dark-gray;
     font-size: 4em;
 }
 
@@ -386,13 +398,13 @@ header {
 ::-moz-selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: $theme-dark-gray;
 }
 
 ::selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: $theme-dark-gray;
 }
 
 img::selection {
@@ -406,6 +418,6 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: $theme-dark;
+    -webkit-tap-highlight-color: $theme-dark-gray;
 }
 
