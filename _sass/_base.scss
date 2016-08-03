@@ -42,7 +42,6 @@ h6 {
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px;
 }
 
 .bg-primary {
@@ -70,23 +69,28 @@ section {
     padding: 100px 0;
 }
 
-aside {
-    padding: 100px 0;
-}
-
 .no-padding {
     padding: 0;
+}
+
+.small-padding {
+    padding: 10;
+}
+
+.small-padding-top {
+    padding-top: 10;
+    padding-bottom: 0;
 }
 
 .no-margin {
     margin: 0;
 }
 
-.small-margin-bottom {
+.fix-margin-bottom {
     margin-bottom: -50px;
 }
 
-.small-margin-top {
+.fix-margin-top {
     margin-top: -50px;
 }
 
@@ -379,6 +383,10 @@ header {
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.color-blue {
+    color: $theme-dark-blue;
 }
 
 // Button Styles
