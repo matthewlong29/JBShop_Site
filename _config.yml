@@ -17,9 +17,9 @@ defaults:
       layout: get-to-know-us
   - scope:
       path: _posts
-      type: before-and-after
+      type: more-before-and-after
     values:
-      layout: before-and-after-archive
+      layout: more-before-and-after
 
 twitter_username: MaLong29
 github_username: mtlong29
