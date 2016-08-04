@@ -178,7 +178,6 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -226,6 +225,18 @@ header {
             }
         }
     }
+}
+
+.header-front {
+    background-image: url('../img/header-front.png');
+}
+
+.header-more-before-and-after {
+    background-image: url('../img/header-more-before-and-after.png');
+}
+
+.header-get-to-know-us {
+    background-image: url('../img/header-get-to-know-us.png');
 }
 
 // Sections
