@@ -68,14 +68,13 @@ p {
     background-image: url('../img/header-more-before-and-after.png');
 }
 
-
 .bg-red {
     background-color: $theme-red;
 }
 
 .bg-red-transparent {
     background-color: $theme-red;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .by-gray {
@@ -85,7 +84,7 @@ p {
 
 .bg-gray-transparent {
     background-color: $theme-gray;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .bg-white {
@@ -212,6 +211,11 @@ section {
     padding: 100px 15px 100px;
     max-width: 1000px;
     display: block;
+    height: 100vh;
+    margin: 0px auto 0;
+    @media (min-width: 992px) {
+        margin: 0px auto 0;
+    }
     .header-content{
         h1 {
             font-weight: 700;
@@ -358,6 +362,10 @@ section {
             }
         }
     }
+}
+
+.blank {
+    height: 33.3vh;
 }
 
 // Bootstrap Overrides
