@@ -170,7 +170,7 @@ section {
     }
 }
 
-// Homepage Header
+// Header
 
 header {
     position: relative;
@@ -368,13 +368,15 @@ header {
     }
 }
 
-.call-to-action {
-    h2 {
-        margin: 0 auto 20px;
-    }
+// Bootstrap Overrides
+.container-break-red {
+    padding: 2px;
 }
 
-// Bootstrap Overrides
+.container-break-gray {
+    padding: 5px;
+}
+
 .text-dark-blue {
     color: $theme-dark-blue;
 }
