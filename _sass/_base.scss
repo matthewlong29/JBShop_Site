@@ -44,6 +44,31 @@ p {
     line-height: 1.5;
 }
 
+.bg-image-front {
+    @include background-cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/header-front.png');
+}
+
+.bg-image-get-to-know-us {
+    @include background-cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/header-get-to-know-us.png');
+}
+
+.bg-image-more-before-and-after {
+    @include background-cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/header-more-before-and-after.png');
+}
+
+
 .bg-red {
     background-color: $theme-red;
 }
@@ -178,73 +203,32 @@ section {
 
 // Header
 
-header {
+.header {
     position: relative;
-    width: 100%;
     min-height: auto;
-    @include background-cover;
-    background-position: center;
     text-align: center;
     color: white;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    .header-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
-        width: 100%;
-        .header-content-inner {
-            h1 {
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
+    text-align: center;
+    padding: 100px 15px 100px;
+    max-width: 1000px;
+    display: block;
+    .header-content{
+        h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0;
         }
-    }
-    @media (min-width: 768px) {
-        min-height: 100%;
-        .header-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .header-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
-                p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
+        hr {
+            margin: 30px auto;
         }
-    }
-}
-
-.header-front {
-    background-image: url('../img/header-front.png');
-}
-
-.header-more-before-and-after {
-    background-image: url('../img/header-more-before-and-after.png');
-}
-
-.header-get-to-know-us {
-    background-image: url('../img/header-get-to-know-us.png');
+        p {
+            font-weight: 300;
+            color: rgba(white, .7);
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+     }
 }
 
 // Sections
