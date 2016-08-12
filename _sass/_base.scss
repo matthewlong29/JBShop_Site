@@ -231,6 +231,7 @@ section {
         h1 {
             font-weight: 700;
             text-transform: uppercase;
+            color: $text-white;
             margin-top: 0;
             margin-bottom: 0;
         }
@@ -239,8 +240,8 @@ section {
         }
         p {
             font-weight: 300;
-            color: white;
-            font-size: 16px;
+            color: $text-white;
+            font-size: 20px;
             margin-bottom: 50px;
         }
      }
