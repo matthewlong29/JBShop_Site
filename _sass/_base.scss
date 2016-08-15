@@ -45,19 +45,23 @@ p {
 }
 
 .bg-image-front {
-    @include background-cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('../img/header-front.png');
-    @media all and (max-device-width: 1024px) {
-     #some_element {
-          background-attachment: scroll;
-     }
+}
+
+@media only screen 
+    and (min-width: 414px)
+    and (max-width: 736px) {
+        .bg-image-front {
+            background-image: none;
+            background-color: $theme-gray;
+    }
 }
 
 .bg-image-get-to-know-us {
-    @include background-cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -65,7 +69,6 @@ p {
 }
 
 .bg-image-more-before-and-after {
-    @include background-cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -218,35 +221,22 @@ section {
 // Header
 
 .header {
-    position: relative;
     min-height: auto;
     text-align: center;
     color: white;
-    text-align: center;
     padding: 100px 15px 100px;
-    max-width: 1000px;
-    display: block;
     height: 100vh;
-    margin: 0px auto 0;
-    @media (min-width: 992px) {
-        margin: 0px auto 0;
-    }
     .header-content{
         h1 {
             font-weight: 700;
             text-transform: uppercase;
             color: $text-white;
-            margin-top: 0;
-            margin-bottom: 0;
         }
         hr {
             margin: 30px auto;
         }
         p {
-            font-weight: 300;
             color: $text-white;
-            font-size: 20px;
-            margin-bottom: 50px;
         }
      }
 }
@@ -466,6 +456,6 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: $theme-gray;
+    -webkit-tap-highlight-color: $theme-white;
 }
 
