@@ -50,6 +50,10 @@ p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('../img/header-front.png');
+    @media all and (max-device-width: 1024px) {
+     #some_element {
+          background-attachment: scroll;
+     }
 }
 
 .bg-image-get-to-know-us {
