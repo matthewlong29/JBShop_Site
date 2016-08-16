@@ -179,43 +179,7 @@ section {
             }
         }
     }
-    @media (min-width: 768px) {
-        background-color: transparent;
-        border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
-            color: rgba(white, .7);
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
-        .nav > li > a,
-        .nav > li > a:focus {
-            color: rgba(white, .7);
-            &:hover {
-                color: white;
-            }
-        }
-        &.affix {
-            background-color: white;
-            border-color: rgba($theme-gray, .5);
-            .navbar-header .navbar-brand {
-                color: $theme-red;
-                font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken($theme-red, 10%);
-                }
-            }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-gray;
-                &:hover {
-                    color: $theme-red;
-                }
-            }
-        }
-    }
+
 }
 
 // Header
