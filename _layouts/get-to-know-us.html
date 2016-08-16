@@ -5,15 +5,53 @@
     
 <body id="page-top-get-to-know-us">
     
-{% include /nav/get-to-know-us.html %}
-{% include /header/get-to-know-us.html %}
-        
-{% include /meet-us/profiles/jb.html %}
-{% include /meet-us/profiles/peggy.html %}
-{% include /meet-us/profiles/john.html %}
-{% include /meet-us/profiles/shari.html %}
-{% include /meet-us/profiles/karlen.html %}
-{% include /meet-us/profiles/painters.html %}
+    {% include /nav/get-to-know-us.html %}
+
+        <div class="bg-image-front">
+        {% include /header/get-to-know-us.html %}
+        </div>
+
+        {% include break-bottom.html %}
+
+        {% include /meet-us/profiles/jb.html %}
+
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+        {% include /meet-us/profiles/peggy.html %}
+
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+        {% include /meet-us/profiles/john.html %}
+
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+        {% include /meet-us/profiles/shari.html %}
+
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+        {% include /meet-us/profiles/karlen.html %}
+
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
  
 {% include contact.html %}
 
