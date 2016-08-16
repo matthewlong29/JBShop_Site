@@ -45,21 +45,17 @@ p {
 }
 
 .bg-image-front {
+    background-image: url('../img/header-front.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url('../img/header-front.png');
 }
-
-@media only screen 
-    and (min-width: 414px)
-    and (max-width: 736px) {
-        .bg-image-front {
-            background-image: none;
-            background-color: $theme-gray;
+    @media only screen 
+        and (min-width: 0px)
+        and (max-width: 736px) {
+            .bg-image-front {
+                background-image: url('../img/header-front.png');
+        }
     }
-}
 
 .bg-image-get-to-know-us {
     background-position: center;
@@ -193,13 +189,13 @@ section {
         h1 {
             font-weight: 700;
             text-transform: uppercase;
-            color: $text-white;
+            color: $theme-gray;
         }
         hr {
             margin: 30px auto;
         }
         p {
-            color: $text-white;
+            color: $theme-gray;
         }
      }
 }
