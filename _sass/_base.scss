@@ -18,6 +18,12 @@ hr.light {
     border-color: white;
 }
 
+hr.skinny-and-long {
+    border-color: $theme-red;
+    border-width: 1.5px;
+    max-width: 1024px;
+}
+
 a {
     @include transition-all;
     color: $theme-black;
@@ -27,6 +33,18 @@ a {
     &:focus {
         color: $theme-red;
         text-decoration: underline;
+    }
+}
+
+a.no-underline {
+    @include transition-all;
+    color: $theme-black;
+    text-emphasis: bold;
+    
+    &:hover,
+    &:focus {
+        color: $theme-red;
+        text-decoration: none;
     }
 }
 
@@ -126,9 +144,21 @@ section {
     margin-right: 0;
     padding-bottom: 0;
     padding-top: 0;
-    padding-left: 50;
-    padding-right: 50;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.small-lrtb {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 
 // Navigation
 
@@ -179,19 +209,21 @@ section {
     min-height: auto;
     text-align: center;
     color: white;
-    padding: 100px 15px 100px;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10%;
     .header-content{
         h1 {
-            font-weight: 700;
+            font-weight: 900;
             text-transform: uppercase;
             color: $theme-gray;
         }
         hr {
-            margin: 30px auto;
+            margin: 15px auto;
         }
         p {
-            color: $theme-gray;
+            font-weight: 500;
+            padding: 15% 15% 2.5%;
+            color: $theme-white;
         }
      }
 }
@@ -200,19 +232,21 @@ section {
     min-height: auto;
     text-align: center;
     color: white;
-    padding: 100px 15px 100px;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10%;
     .header-content{
         h1 {
-            font-weight: 700;
+            font-weight: 900;
             text-transform: uppercase;
             color: $theme-gray;
         }
         hr {
-            margin: 30px auto;
+            margin: 15px auto;
         }
         p {
-            color: $theme-gray;
+            font-weight: 500;
+            padding: 15% 15% 2.5%;
+            color: $theme-white;
         }
      }
 }
@@ -221,19 +255,21 @@ section {
     min-height: auto;
     text-align: center;
     color: white;
-    padding: 100px 15px 100px;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10%;
     .header-content{
         h1 {
-            font-weight: 700;
+            font-weight: 900;
             text-transform: uppercase;
             color: $theme-gray;
         }
         hr {
-            margin: 30px auto;
+            margin: 15px auto;
         }
         p {
-            color: $theme-gray;
+            font-weight: 500;
+            padding: 15% 15% 2.5%;
+            color: $theme-white;
         }
      }
 }
@@ -385,12 +421,12 @@ section {
     color: $theme-red;
 }
 
-.text-white {
-    color: $text-white;
+.theme-white {
+    color: $theme-white;
 }
 
-.text-gray {
-    color: $text-gray;
+.theme-gray {
+    color: $theme-gray;
 }
 
 .no-gutter > [class*='col-'] {
