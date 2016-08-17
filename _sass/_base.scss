@@ -22,7 +22,6 @@ hr.skinny-and-long {
     border-color: $theme-red;
     border-width: 1.5px;
     max-width: 1024px;
-    opacity: 0.5;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -180,6 +179,28 @@ p {
     padding-top: 0;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.medium-lr {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.medium-lrtb {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 25px;
+    padding-top: 0;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .no-gutter > [class*='col-'] {
