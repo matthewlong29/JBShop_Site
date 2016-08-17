@@ -1,10 +1,8 @@
 html,
+
 body {
     height: 100%;
     width: 100%;
-}
-
-body {
     @include serif-font;
 }
 
@@ -22,6 +20,7 @@ hr.skinny-and-long {
     border-color: $theme-red;
     border-width: 1.5px;
     max-width: 1024px;
+    
 }
 
 a {
@@ -62,6 +61,26 @@ p {
     line-height: 1.5;
 }
 
+// Colors
+
+.theme-red {
+    color: $theme-red;
+}
+
+.theme-gray {
+    color: $theme-gray;
+}
+
+.theme-white {
+    color: $theme-white;
+}
+
+.theme-black {
+    color: $theme-black;
+}
+
+// Background Images
+
 .bg-image-front {
     background-image: url('../img/header-front.png');
     background-size: cover;
@@ -79,6 +98,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+// Background Colors
 
 .bg-red {
     background-color: $theme-red;
@@ -103,13 +124,7 @@ p {
     background-color: $theme-white;
 }
 
-.text-faded {
-    color: rgba(white, .7);
-}
-
-section {
-    padding: 100px 0;
-}
+// Paddings and Margins 
 
 .no-padding {
     padding: 0;
@@ -159,6 +174,10 @@ section {
     padding-right: 25px;
 }
 
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
 
 // Navigation
 
@@ -203,7 +222,7 @@ section {
     }
 }
 
-// Header
+// Headers
 
 .header-front {
     min-height: auto;
@@ -276,6 +295,10 @@ section {
 
 
 // Sections
+
+section {
+    padding: 100px 0;
+}
 
 .section-heading {
     margin-top: 0;
@@ -408,7 +431,6 @@ section {
     height: 33.3vh;
 }
 
-// Bootstrap Overrides
 .container-break-red {
     padding: 2px;
 }
@@ -417,28 +439,8 @@ section {
     padding: 5px;
 }
 
-.text-dark-blue {
-    color: $theme-red;
-}
-
-.theme-white {
-    color: $theme-white;
-}
-
-.theme-gray {
-    color: $theme-gray;
-}
-
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
-.color-blue {
-    color: $theme-red;
-}
-
 // Button Styles
+
 .btn-default {
     @include button-variant($theme-gray, white, white);
 }
@@ -460,6 +462,7 @@ section {
 }
 
 // Contact
+
 #contact .fa {
     color: $theme-gray;
     font-size: 4em;
@@ -467,6 +470,7 @@ section {
 
 // Extras
 // -- Highlight Color Customization
+
 ::-moz-selection {
     color: white;
     text-shadow: none;
