@@ -68,6 +68,28 @@ p {
     line-height: 1.5;
 }
 
+// Lists
+
+ul {
+    font-size: 16px;
+    padding: 0px;
+}
+
+ul li {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+ul.nav {
+    font-size: 0;
+    padding: 0px;
+}
+
+ul li.nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 // Colors
 
 .theme-red {
@@ -149,14 +171,6 @@ p {
 .small-padding-bot {
     padding-top: 0;
     padding-bottom: 10;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-.small-margin {
-    margin: 10;
 }
 
 .small-lr {
@@ -275,7 +289,7 @@ p {
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
-                font-size: 13px;
+                font-size: 14px;
                 color: $theme-gray;
                 &:hover {
                     color: $theme-red;
