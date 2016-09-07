@@ -61,7 +61,14 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    color: $theme-black;
+    
+    &:hover,
+    &:focus {
+        color: $theme-red;
+    }
 }
+
 
 p {
     font-size: 16px;
