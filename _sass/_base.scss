@@ -1,9 +1,11 @@
 html,
 
 body {
-    height: 100%;
     width: 100%;
     @include serif-font;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 // Horizontal Rules
