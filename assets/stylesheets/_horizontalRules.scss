@@ -1,0 +1,17 @@
+hr {
+	border-color: $theme-red;
+	border-width: 3px;
+	max-width: 50px;
+}
+
+hr.light {
+	border-color: white;
+}
+
+hr.skinny-and-long {
+	border-color: $theme-red;
+	border-width: 1.5px;
+	max-width: 1024px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}

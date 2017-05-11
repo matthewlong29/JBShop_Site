@@ -1,7 +1,0 @@
----
-layout: get-to-know-us
-
-permalink: /get-to-know-us/
-
-date: 2016-08-01
----

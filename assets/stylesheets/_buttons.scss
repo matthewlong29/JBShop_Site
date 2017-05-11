@@ -1,0 +1,23 @@
+.btn-default {
+	@include button-variant($theme-gray,
+	white,
+	white);
+}
+
+.btn-primary {
+	@include button-variant(white,
+	$theme-red,
+	$theme-red);
+}
+
+.btn {
+	@include sans-serif-font;
+	border: none;
+	border-radius: 300px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn-xl {
+	padding: 15px 30px;
+}

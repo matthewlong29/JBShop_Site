@@ -1,0 +1,266 @@
+html,
+body {
+	width: 100%;
+	@include serif-font;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+a {
+	@include transition-all;
+	color: $theme-black;
+	text-emphasis: bold;
+	&:hover,
+	&:focus {
+		color: $theme-red;
+		text-decoration: underline;
+	}
+}
+
+a.no-underline {
+	@include transition-all;
+	color: $theme-black;
+	text-emphasis: bold;
+	&:hover,
+	&:focus {
+		color: $theme-red;
+		text-decoration: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include sans-serif-font;
+	color: $theme-black;
+	&:hover,
+	&:focus {
+		color: $theme-red;
+	}
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+// Lists
+ul {
+	font-size: 16px;
+	padding: 0px;
+}
+
+ul li {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+ul.nav {
+	font-size: 0;
+	padding: 0px;
+}
+
+ul li.nav {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+// Colors
+.theme-red {
+	color: $theme-red;
+}
+
+.theme-gray {
+	color: $theme-gray;
+}
+
+.theme-white {
+	color: $theme-white;
+}
+
+.theme-black {
+	color: $theme-black;
+}
+
+// Paddings and Margins 
+.no-padding {
+	padding: 0;
+}
+
+.small-padding {
+	padding: 10;
+}
+
+.small-padding-top {
+	padding-top: 10;
+	padding-bottom: 0;
+}
+
+.small-padding-bot {
+	padding-top: 0;
+	padding-bottom: 10;
+}
+
+.small-lr {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.small-lrb {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 25px;
+	padding-top: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.small-lrt {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.small-lrbt {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.medium-lr {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.medium-lrb {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 25px;
+	padding-top: 0;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.medium-lrt {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-top: 25px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.medium-lrbt {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.no-gutter>[class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+// Sections
+section {
+	padding: 100px 0;
+}
+
+.section-heading {
+	margin-top: 0;
+}
+
+.service-box {
+	max-width: 400px;
+	margin: 50px auto 0;
+	@media (min-width: 992px) {
+		margin: 20px auto 0;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.blank {
+	height: 33.3vh;
+}
+
+.container-break-red {
+	padding: 2px;
+}
+
+.container-break-gray {
+	padding: 5px;
+}
+
+// Contact
+#contact .fa {
+	color: $theme-gray;
+	font-size: 4em;
+}
+
+// SVG Styles
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+	color: white;
+	text-shadow: none;
+	background: $theme-gray;
+}
+
+::selection {
+	color: white;
+	text-shadow: none;
+	background: $theme-gray;
+}
+
+img::selection {
+	color: white;
+	background: transparent;
+}
+
+img::-moz-selection {
+	color: white;
+	background: transparent;
+}
+
+body {
+	-webkit-tap-highlight-color: $theme-white;
+}

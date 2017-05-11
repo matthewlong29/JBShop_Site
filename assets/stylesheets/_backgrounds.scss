@@ -1,0 +1,53 @@
+.bg-image-front {
+	background-image: url('../../img/header-front.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-image-services {
+	background-image: url('../../img/header-services.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-image-meet {
+	background-image: url('../../img/header-meet-us.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-image-get-to-know-us {
+	background-image: url('../../img/img/header-get-to-know-us.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-image-more-before-and-after {
+	background-image: url('../../img/header-more-before-and-after.png');
+	background-size: cover;
+	background-position: center;
+}
+
+// Background Colors
+.bg-red {
+	background-color: $theme-red;
+}
+
+.bg-red-transparent {
+	background-color: $theme-red;
+	opacity: 0.9;
+}
+
+.by-gray {
+	background-color: $theme-gray;
+	color: white;
+}
+
+.bg-gray-transparent {
+	background-color: $theme-gray;
+	opacity: 0.9;
+}
+
+.bg-white {
+	background-color: $theme-white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+    {% include /nav/front.html %}
+    
+        <div class="bg-image-front">
+            {% include /header/front.html %}
+        </div>
+    
+        {% include break-bottom.html %}
+
+        {% include /about-and-services/front-content.html %}
+        
+            {% include break-top.html %}
+                <div class="bg-image-services">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+ 
+        {% include /before-and-after/front-content.html %}
+ 
+            {% include break-top.html %}
+                <div class="bg-image-more-before-and-after">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+        {% include /meet-us/front-content.html %}
+        
+            {% include break-top.html %}
+                <div class="bg-image-meet">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+
+    {% include contact-shop.html %}
+    
+            {% include break-top.html %}
+                <div class="bg-image-front">
+                    {% include blank.html%}
+                </div>
+            {% include break-bottom.html %}
+    
+    {% include contact-matthew.html %}
+    
+    {% include scripts.html %}
+    
+</body>
+
+</html>

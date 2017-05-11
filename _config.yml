@@ -1,27 +1,15 @@
 title: JB Long and Son Body Shop
 
-email-matthew: long.matthew29@gmail.com
-email-shop: [address@email.com]
-
 description: Description of JB Long and Son Body Shop.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.jblongandsonbodyshop.com" # the base hostname & protocol for your site
 
-url: "" # the base hostname & protocol for your site
-
-defaults:
-  - scope:
-      path: _posts
-      type: get-to-know-us
-    values:
-      layout: get-to-know-us
-  - scope:
-      path: _posts
-      type: more-before-and-after
-    values:
-      layout: more-before-and-after
-
-twitter_username: MaLong29
-github_username: mtlong29
+sass:
+  sass_dir: assets/stylesheets
+  style: compressed
 
 markdown: kramdown
+
+gems:
+  - jekyll
+  - jekyll-assets
