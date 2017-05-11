@@ -1,0 +1,33 @@
+#about {
+	background-color: $theme-white;
+	padding: 5em 0;
+	text-align: center;
+	p {
+		color: $theme-gray;
+		margin: 0 0 5em 0;
+	}
+	h2 {
+		margin: 0 auto;
+		color: $theme-black;
+		&:hover {
+			color: $theme-red;
+		}
+	}
+	h3 {
+		margin: .5em auto;
+		color: $theme-black;
+	}
+	.serviceTiles {
+		max-width: 400px;
+		margin: 50px auto 0;
+		@media (min-width: 992px) {
+			margin: 20px auto 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	i.fa {
+		color: $theme-red;
+	}
+}

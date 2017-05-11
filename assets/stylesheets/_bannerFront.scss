@@ -1,0 +1,22 @@
+.bannerFront {
+	min-height: auto;
+	text-align: center;
+	color: white;
+	min-height: 100vh;
+	padding: 10% 0 10%;
+	.bannerContent {
+		h1 {
+			font-weight: 900;
+			text-transform: uppercase;
+			color: $theme-gray;
+		}
+		hr {
+			margin: 15px auto;
+		}
+		p {
+			font-weight: 500;
+			padding: 17.5% 0 2.5%;
+			color: $theme-white;
+		}
+	}
+}

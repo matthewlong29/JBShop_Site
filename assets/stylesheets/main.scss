@@ -16,14 +16,20 @@ $theme-gray: #6F7176;
 $theme-white: #fdfdfd;
 $theme-black: #000000;
 
-//@import "bootstrap";
+// Critical
 @import "mixins";
 @import "base";
 
+// HTML Elements
 @import "backgrounds";
-@import "navigation";
-@import "headers";
-@import "beforeAndAfter";
-@import "meetUs";
 @import "horizontalRules";
 @import "buttons";
+
+// Sections
+@import "navigation";
+@import "bannerFront";
+@import "about";
+@import "beforeAndAfter";
+@import "meetUs";
+@import "contactShop";
+@import "contactMatthew";

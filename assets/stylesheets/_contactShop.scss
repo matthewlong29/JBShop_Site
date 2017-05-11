@@ -1,0 +1,15 @@
+#contactShop {
+	background-color: $theme-white;
+	padding: 5em 0;
+	text-align: center;
+	h2 {
+		margin-top: 0;
+	}
+	p.top {
+		color: $theme-gray;
+		margin: 0 0 5em 0;
+	}
+	i.fa {
+		color: $theme-red;
+	}
+}
