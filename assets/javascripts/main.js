@@ -49,3 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		typeSpeed: 100
 	});
 });
+
+//new Cocoen(document.querySelector('.cocoen'));
+
+document.querySelectorAll('.cocoen').forEach(function(element){
+  new Cocoen(element);
+});
+
+$('.cocoen').cocoen();
