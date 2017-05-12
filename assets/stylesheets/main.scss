@@ -13,8 +13,8 @@ $spacing-unit: 30px;
 // Theme Colors
 $theme-red: #cc3333;
 $theme-gray: #6F7176;
-$theme-white: #fdfdfd;
-$theme-black: #000000;
+$theme-white: #fff;
+$theme-black: #000;
 
 // Critical
 @import "mixins";
@@ -24,6 +24,12 @@ $theme-black: #000000;
 @import "backgrounds";
 @import "horizontalRules";
 @import "buttons";
+
+// Typed JavaScript Styling
+@import "typed";
+
+// For the footer reveal
+@import "theOtherBody";
 
 // Sections
 @import "navigation";

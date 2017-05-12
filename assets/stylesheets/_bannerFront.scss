@@ -9,6 +9,7 @@
 			font-weight: 900;
 			text-transform: uppercase;
 			color: $theme-gray;
+			text-shadow: 2px 2px 4px $theme-black;
 		}
 		hr {
 			margin: 15px auto;
@@ -17,6 +18,7 @@
 			font-weight: 500;
 			padding: 17.5% 0 2.5%;
 			color: $theme-white;
+			text-shadow: 1px 1px 2px $theme-black;
 		}
 	}
 }

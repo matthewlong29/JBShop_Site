@@ -3,6 +3,7 @@
 	border-color: rgba($theme-gray, .5);
 	@include sans-serif-font;
 	@include transition-all;
+	box-shadow: 2px 2px 4px $theme-black;
 	.navbar-header .navbar-brand {
 		color: $theme-red;
 		@include sans-serif-font;
