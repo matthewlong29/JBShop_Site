@@ -45,7 +45,7 @@ $(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
 	Typed.new('.typed', {
-		strings: ["Open 8 to 5 Monday thru Friday!", "Walk ins welcome!", "Feel free to call at (502) 695-4477."],
+		strings: ["Open 8 to 5 Monday thru Friday!", "Walk-ins welcome!", "Feel free to call at (502) 695-4477."],
 		typeSpeed: 100
 	});
 });
