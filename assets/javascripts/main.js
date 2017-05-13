@@ -57,7 +57,3 @@ document.querySelectorAll('.cocoen').forEach(function(element){
 });
 
 $('.cocoen').cocoen();
-
-$(function() {
-    $('.bottomBody').footerReveal();
-});
