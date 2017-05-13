@@ -1,24 +1,23 @@
 .btn-default {
-	@include button-variant($theme-gray,
+	@include button-variant($gray,
 	white,
 	white);
 }
 
 .btn-primary {
 	@include button-variant(white,
-	$theme-red,
-	$theme-red);
+	$red,
+	$red);
 }
 
 .btn {
-	@include sans-serif-font;
 	border: none;
 	border-radius: 300px;
 	font-weight: 700;
 	text-transform: uppercase;
-	box-shadow: 2px 2px 4px $theme-black;
+	box-shadow: $mediumShadow;
 	&:hover{
-		box-shadow: 1px 1px 2px $theme-black;
+		box-shadow: $smallShadow;
 	}
 }
 

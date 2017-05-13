@@ -1,17 +1,15 @@
 .navbar-default {
 	background-color: white;
-	border-color: rgba($theme-gray, .5);
-	@include sans-serif-font;
+	border-color: rgba($gray, .5);
 	@include transition-all;
-	box-shadow: 2px 2px 4px $theme-black;
+	box-shadow: $mediumShadow;
 	.navbar-header .navbar-brand {
-		color: $theme-red;
-		@include sans-serif-font;
+		color: $red;
 		font-weight: 700;
 		text-transform: uppercase;
 		&:hover,
 		&:focus {
-			color: darken($theme-red, 10%);
+			color: darken($red, 10%);
 		}
 	}
 	.nav {
@@ -21,15 +19,15 @@
 				text-transform: uppercase;
 				font-weight: 700;
 				font-size: 14px;
-				color: $theme-gray;
+				color: $gray;
 				&:hover {
-					color: $theme-red;
+					color: $red;
 				}
 			}
 			&.active {
 				>a,
 				>a:focus {
-					color: $theme-red !important;
+					color: $red !important;
 					background-color: transparent;
 					&:hover {
 						background-color: transparent;

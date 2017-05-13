@@ -3,18 +3,19 @@
 
 @charset "utf-8";
 
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size: 16px;
-$small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.5;
+$primaryFont: 'Oswald', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
 
-$spacing-unit: 30px;
+// Colors
+$red: #cc3333;
+$gray: #6F7176;
+$white: #fff;
+$black: #000;
 
-// Theme Colors
-$theme-red: #cc3333;
-$theme-gray: #6F7176;
-$theme-white: #fff;
-$theme-black: #000;
+// Shadows
+$smallShadow: 1px 1px 2px $black;
+$mediumShadow: 2px 2px 4px $black;
+$cocoenShadow: 2px 2px 4px $gray, -2px -2px 4px $gray;
 
 // Critical
 @import "mixins";

@@ -1,22 +1,22 @@
 .bannerFront {
 	min-height: auto;
 	text-align: center;
-	color: white;
+	color: $white;
 	min-height: 100vh;
 	padding: 5em 0;
 	.bannerContent {
 		h1 {
 			font-weight: 900;
 			text-transform: uppercase;
-			color: $theme-gray;
-			text-shadow: 2px 2px 4px $theme-black;
+			color: $gray;
+			text-shadow: $mediumShadow;
 		}
 		h2 {
 			font-size: 24px;
-			color: $theme-white;
-			text-shadow: 2px 2px 4px $theme-black;
+			color: $white;
+			text-shadow: $mediumShadow;
 			&:hover {
-				color: $theme-white;
+				color: $white;
 			}
 		}
 		hr {
@@ -25,13 +25,13 @@
 		p {
 			font-weight: 500;
 			padding: 17.5% 0 2.5%;
-			color: $theme-white;
-			text-shadow: 1px 1px 2px $theme-black;
+			color: $white;
+			text-shadow: $smallShadow;
 		}
 		.typed {
 			display: inline;
-			color: $theme-white;
-			text-shadow: 1px 1px 2px $theme-black;
+			color: $white;
+			text-shadow: $smallShadow;
 		}
 		.typed-cursor {
 			font-size: 24px;

@@ -12,12 +12,11 @@
 		display: none;
 	}
 	p {
-		//    font: 700 0.7em/1em 'Avenir',sans-serif;
 		animation-duration: 2s;
 		animation-fill-mode: both;
 		animation-iteration-count: infinite;
 		animation-name: scroll;
-		color: $theme-black;
+		color: $black;
 	}
 	>p {
 		text-transform: uppercase;
@@ -26,7 +25,7 @@
 }
 
 .mouse {
-	border: 2px solid $theme-black;
+	border: 2px solid $black;
 	border-radius: 13px;
 	display: block;
 	height: 46px;

@@ -1,7 +1,6 @@
 html,
 body {
 	width: 100%;
-	@include serif-font;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -9,22 +8,22 @@ body {
 
 a {
 	@include transition-all;
-	color: $theme-black;
+	color: $black;
 	text-emphasis: bold;
 	&:hover,
 	&:focus {
-		color: $theme-red;
+		color: $red;
 		text-decoration: underline;
 	}
 }
 
 a.no-underline {
 	@include transition-all;
-	color: $theme-black;
+	color: $black;
 	text-emphasis: bold;
 	&:hover,
 	&:focus {
-		color: $theme-red;
+		color: $red;
 		text-decoration: none;
 	}
 }
@@ -35,12 +34,21 @@ h3,
 h4,
 h5,
 h6 {
-	@include sans-serif-font;
-	color: $theme-black;
+	font-family: $primaryFont;
+	color: $black;
 	&:hover,
 	&:focus {
-		color: $theme-red;
+		color: $red;
 	}
+}
+
+p {
+	font-family: $secondaryFont;
+}
+
+a {
+	font-family: $primaryFont;
+	letter-spacing: 1px;
 }
 
 p {
@@ -71,19 +79,19 @@ ul li.nav {
 
 // Colors
 .theme-red {
-	color: $theme-red;
+	color: $red;
 }
 
 .theme-gray {
-	color: $theme-gray;
+	color: $gray;
 }
 
 .theme-white {
-	color: $theme-white;
+	color: $white;
 }
 
 .theme-black {
-	color: $theme-black;
+	color: $black;
 }
 
 // Paddings and Margins 
@@ -115,12 +123,12 @@ section {
 
 .container-break-gray {
 	padding: 5px;
-	box-shadow: -2px -2px 4px 0 $theme-black, 2px 2px 4px 0 $theme-black;
+	box-shadow: -2px -2px 4px 0 $black, 2px 2px 4px 0 $black;
 }
 
 // Contact
 #contact .fa {
-	color: $theme-gray;
+	color: $gray;
 	font-size: 4em;
 }
 
@@ -130,13 +138,13 @@ section {
 ::-moz-selection {
 	color: white;
 	text-shadow: none;
-	background: $theme-gray;
+	background: $gray;
 }
 
 ::selection {
 	color: white;
 	text-shadow: none;
-	background: $theme-gray;
+	background: $gray;
 }
 
 img::selection {
@@ -150,5 +158,5 @@ img::-moz-selection {
 }
 
 body {
-	-webkit-tap-highlight-color: $theme-white;
+	-webkit-tap-highlight-color: $white;
 }

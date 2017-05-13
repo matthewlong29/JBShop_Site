@@ -1,20 +1,20 @@
 #meetUs {
-	background-color: $theme-white;
+	background-color: $white;
 	padding: 5em 0;
 	text-align: center;
 	p {
-		color: $theme-gray;
+		color: $gray;
 		margin: 0 0 5em 0;
 	}
 	h2,
 	h3 {
 		margin: 0 auto;
-		color: $theme-black;
+		color: $black;
 	}
 	h2 {
-		color: $theme-black;
+		color: $black;
 		&:hover {
-			color: $theme-red;
+			color: $red;
 		}
 	}
 	.meetUsTiles {
@@ -23,9 +23,9 @@
 		}
 		img {
 			margin: 0 0 1em 0;
-			box-shadow: 2px 2px 4px $theme-black;
+			box-shadow: $mediumShadow;
 			&:hover {
-				box-shadow: 1px 1px 2px $theme-black;
+				box-shadow: $smallShadow;
 			}
 		}
 	}

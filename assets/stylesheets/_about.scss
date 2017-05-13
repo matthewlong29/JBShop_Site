@@ -1,21 +1,21 @@
 #about {
-	background-color: $theme-white;
+	background-color: $white;
 	padding: 5em 0;
 	text-align: center;
 	p {
-		color: $theme-gray;
+		color: $gray;
 		margin: 0 0 5em 0;
 	}
 	h2 {
 		margin: 0 auto;
-		color: $theme-black;
+		color: $black;
 		&:hover {
-			color: $theme-red;
+			color: $red;
 		}
 	}
 	h3 {
 		margin: .5em auto;
-		color: $theme-black;
+		color: $black;
 	}
 	.serviceTiles {
 		max-width: 400px;
@@ -28,6 +28,7 @@
 		}
 	}
 	i.fa {
-		color: $theme-red;
+		color: $red;
+		text-shadow: $mediumShadow;
 	}
 }
