@@ -26,13 +26,16 @@ $theme-black: #000;
 @import "buttons";
 
 // Typed JavaScript Styling
-@import "typed";
+//@import "typed";
 
 // For the footer reveal
-@import "theOtherBody";
+//@import "theOtherBody";
 
 // Before and After Slider
 //@import "cocoen.min";
+
+// Scroll Down Button
+@import "scrollDown";
 
 // Sections
 @import "navigation";
