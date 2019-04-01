@@ -3,12 +3,12 @@
 
 @charset "utf-8";
 
-$primaryFont: 'Oswald', sans-serif;
-$secondaryFont: 'Open Sans', sans-serif;
+$primaryFont: "Oswald", sans-serif;
+$secondaryFont: "Open Sans", sans-serif;
 
 // Colors
 $red: #cc3333;
-$gray: #6F7176;
+$gray: #6f7176;
 $white: #fff;
 $black: #000;
 
@@ -45,4 +45,3 @@ $cocoenShadow: 2px 2px 4px $gray, -2px -2px 4px $gray;
 @import "beforeAndAfter";
 @import "meetUs";
 @import "contactShop";
-@import "contactMatthew";
