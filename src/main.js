@@ -4,10 +4,15 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faPhone, faClock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faClock,
+  faArrowLeft,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faPhone, faClock);
+library.add(faPhone, faClock, faArrowLeft, faArrowRight);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
