@@ -1,11 +1,11 @@
 // colors
-$gray: rgba(80, 81, 79, 1);
-$red: rgba(242, 95, 92, 1);
-$yellow: rgba(255, 224, 102, 1);
-$blue: rgba(36, 123, 160, 1);
-$green: rgba(112, 193, 179, 1);
-$white: #fff;
-$black: #000;
+$red: #f25f5c;
+$yellow: #ffe066;
+$blue: #247ba0;
+$green: #70c1b3;
+$white: #ffffff;
+$gray: #50514f;
+$black: #000000;
 
 // borders
 $borderCommon: 1px solid rgba($gray, 0.5);
@@ -15,5 +15,5 @@ $radiusCommon: 2px;
 $shadowCommon: 0 0 8px rgba($gray, 0.33);
 $shadowHoverCommon: 0 0 12px rgba($gray, 0.5);
 
-$titleFont: "Playfair Display SC", serif;
+$titleFont: "Roboto", sans-serif;
 $bodyFont: "Open Sans", sans-serif;
