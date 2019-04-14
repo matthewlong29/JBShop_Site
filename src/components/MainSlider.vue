@@ -2,14 +2,14 @@
   <section :style="{backgroundImage: `url(${images[counter]})`}">
     <div class="progress-slider" v-bind:style="{width: progressPercentage + '%'}"></div>
     <div class="slider-content-container">
-      <button>
+      <button v-on:click="decrementCounter()">
         <font-awesome-icon icon="arrow-left"/>
       </button>
       <div class="messages-container">
         <h1>{{ messages[counter][0] }}</h1>
         <h2>{{ messages[counter][1] }}</h2>
       </div>
-      <button>
+      <button v-on:click="incrementCounter()">
         <font-awesome-icon icon="arrow-right"/>
       </button>
     </div>
@@ -27,10 +27,7 @@ export default {
       timer: setInterval(this.countdown, 1000),
       progressPercentage: 100,
       messages: [
-        [
-          "The best car repair service in your area!",
-          "Since 1970?"
-        ],
+        ["The best car repair service in your area!", "Since 1970?"],
         ["Something else about car repair!", "We repair with love."],
         ["Walk-ins always welcome!", "Or call now at (502) 695-4477"]
       ],
@@ -56,6 +53,7 @@ export default {
     },
     /***** calculateProgressPercentage
      * TODO: get setTimeout to work propperly such that once reset it waits before countign down again
+     * TODO: reset progress to 100 whenever clicking decrement or increment counter button
      */
     calculateProgressPercentage() {
       this.progressPercentage = (this.timeLeft / this.originalTime) * 100;
@@ -70,6 +68,29 @@ export default {
     resetProgressPercentage() {
       this.progressPercentage = 100;
       this.timeLeft = this.originalTime;
+      this.incrementCounter();
+    },
+    /***** decrementCounter
+     */
+    decrementCounter() {
+      if (this.counter === 0) {
+        console.log("counter is " + this.counter);
+        this.counter = 2;
+      } else {
+        console.log("counter is " + this.counter);
+        this.counter--;
+      }
+    },
+    /***** incrementCounter
+     */
+    incrementCounter() {
+      if (this.counter === 2) {
+        console.log("counter is " + this.counter);
+        this.counter = 0;
+      } else {
+        console.log("counter is " + this.counter);
+        this.counter++;
+      }
     }
   },
   beforeMount() {
