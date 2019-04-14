@@ -113,7 +113,7 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    .messages-container {
+    .messages-container { // TODO add transitions for messages
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -149,7 +149,7 @@ section {
     }
   }
   .progress-slider {
-    background-color: transparentize($color: $blue, $amount: 0.5);
+    background-color: transparentize($color: $blue, $amount: 0.25);
     height: 4px;
     margin: 0;
     transition: width 1.2s;
