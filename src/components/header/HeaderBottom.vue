@@ -4,19 +4,19 @@
       <a href="/">
         <li>Home</li>
       </a>
-      <a href>
+      <a href="/about">
         <li>About</li>
       </a>
-      <a href>
+      <a href="/services">
         <li>Services</li>
       </a>
-      <a href>
+      <a href="/team">
         <li>Our Team</li>
       </a>
-      <a href>
+      <a href="/jobs">
         <li>Jobs</li>
       </a>
-      <a href>
+      <a href="/contact">
         <li>Contact</li>
       </a>
     </ul>
@@ -48,6 +48,7 @@ nav {
       text-decoration: none;
       color: $white;
       font-weight: bold;
+      transition: background-color 0.2s;
       &:hover {
         background-color: $red;
       }
