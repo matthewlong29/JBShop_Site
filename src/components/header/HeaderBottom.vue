@@ -48,6 +48,7 @@ nav {
       text-decoration: none;
       color: $white;
       font-weight: bold;
+      transition: background-color 0.2s;
       &:hover {
         background-color: $red;
       }
