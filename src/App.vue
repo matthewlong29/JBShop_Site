@@ -19,7 +19,7 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
-  margin-top: 157px;
+  margin-top: calc(82px + 50px); // top header + bottom header height
   min-height: 5000px;
 }
 </style>

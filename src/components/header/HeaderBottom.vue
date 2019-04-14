@@ -4,19 +4,19 @@
       <a href="/">
         <li>Home</li>
       </a>
-      <a href>
+      <a href="/about">
         <li>About</li>
       </a>
-      <a href>
+      <a href="/services">
         <li>Services</li>
       </a>
-      <a href>
+      <a href="/team">
         <li>Our Team</li>
       </a>
-      <a href>
+      <a href="/jobs">
         <li>Jobs</li>
       </a>
-      <a href>
+      <a href="/contact">
         <li>Contact</li>
       </a>
     </ul>
