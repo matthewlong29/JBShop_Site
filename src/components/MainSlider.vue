@@ -108,12 +108,14 @@ section {
   background-size: cover;
   background-position: center;
   border-bottom: 4px solid $red;
+  transition: background-image 0.25s ease-in-out;
   .slider-content-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    .messages-container { // TODO add transitions for messages
+    .messages-container {
+      // TODO add transitions for messages
       display: flex;
       flex-direction: column;
       align-items: flex-end;
