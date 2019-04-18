@@ -39,7 +39,7 @@ section {
   @extend %container;
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin: 5rem auto;
   .why-choose-us {
     div {
       border-left: 4px solid $red;
