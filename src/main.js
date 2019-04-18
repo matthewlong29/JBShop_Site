@@ -8,11 +8,30 @@ import {
   faPhone,
   faClock,
   faArrowLeft,
-  faArrowRight
+  faArrowRight,
+  faCar,
+  faAward,
+  faCarSide,
+  faTools,
+  faTruckPickup,
+  faMagic,
+  faClipboard
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faPhone, faClock, faArrowLeft, faArrowRight);
+library.add(
+  faPhone,
+  faClock,
+  faArrowLeft,
+  faArrowRight,
+  faCar,
+  faAward,
+  faCarSide,
+  faTools,
+  faTruckPickup,
+  faMagic,
+  faClipboard
+);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
