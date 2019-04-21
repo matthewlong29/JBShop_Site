@@ -1,10 +1,7 @@
 <template>
   <section class="image-gallery">
     <div class="image-slider-control">
-      <div class="gallery-title-container">
-        <h2>Our Gallery</h2>
-        <h3>Some subtitle about the gallery..</h3>
-      </div>
+      <TitleAndSubtitle title="Our Gallery" subtitle="Some subtitle about the gallery.."></TitleAndSubtitle>
       <div>
         <button v-on:click="decrementMargin()" :disabled="marginVal < -300 * 10">
           <font-awesome-icon icon="arrow-left"/>
@@ -32,8 +29,13 @@
 </template>
 
 <script>
+import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
+
 export default {
   name: "ImageGallerySlider",
+  components: {
+    TitleAndSubtitle
+  },
   data() {
     return {
       images: [
@@ -166,22 +168,6 @@ section.image-gallery {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid transparentize($color: $gray, $amount: 0.8);
-    div.gallery-title-container {
-      border-left: 4px solid $red;
-      padding-left: 0.5rem;
-      margin-bottom: 0.5rem;
-      h2,
-      h3 {
-        margin: 0;
-      }
-      h2 {
-        font-weight: bold;
-      }
-      h3 {
-        font-weight: lighter;
-        color: lighten($color: $black, $amount: 25);
-      }
-    }
     button {
       height: 40px;
       width: 40px;
