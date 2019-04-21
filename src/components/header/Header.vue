@@ -31,5 +31,6 @@ header {
   top: 0;
   padding: 0;
   width: 100%;
+  z-index: 1;
 }
 </style>
