@@ -7,6 +7,8 @@
       link="tel:5026954477"
       linkMessage="(502) 695-4477"
     ></CallToAction>
+    <ImageGallerySlider></ImageGallerySlider>
+    <GoogleMaps></GoogleMaps>
     <Footer></Footer>
   </main>
 </template>
@@ -16,6 +18,8 @@ import MainSlider from "@/components/MainSlider";
 import Services from "@/components/services/Services";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import GoogleMaps from "@/components/GoogleMaps";
+import ImageGallerySlider from "@/components/ImageGallerySlider";
 
 export default {
   name: "home",
@@ -23,7 +27,9 @@ export default {
     MainSlider,
     Services,
     CallToAction,
-    Footer
+    Footer,
+    GoogleMaps,
+    ImageGallerySlider
   }
 };
 </script>

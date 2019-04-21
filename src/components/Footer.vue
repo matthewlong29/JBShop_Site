@@ -119,7 +119,6 @@ export default {
 footer {
   background-color: darken($color: $blue, $amount: 20);
   border-top: 4px solid darken($color: $red, $amount: 10);
-  margin-top: 5rem;
   .main-footer-content {
     @extend %container;
     display: flex;
