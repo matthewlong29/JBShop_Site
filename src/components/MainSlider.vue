@@ -18,6 +18,7 @@
 
 <script>
 import { setInterval, setTimeout } from "timers";
+
 export default {
   name: "MainSlider",
   data() {

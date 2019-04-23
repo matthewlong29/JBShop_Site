@@ -2,6 +2,7 @@
   <main>
     <MainSlider></MainSlider>
     <Services></Services>
+    <MeetUs></MeetUs>
     <CallToAction
       message="Walk-ins are always welcome, or call now to book an appointment!"
       link="tel:5026954477"
@@ -20,6 +21,7 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import GoogleMaps from "@/components/GoogleMaps";
 import ImageGallerySlider from "@/components/ImageGallerySlider";
+import MeetUs from "@/components/meet-us/MeetUs";
 
 export default {
   name: "home",
@@ -29,7 +31,8 @@ export default {
     CallToAction,
     Footer,
     GoogleMaps,
-    ImageGallerySlider
+    ImageGallerySlider,
+    MeetUs
   }
 };
 </script>

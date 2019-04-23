@@ -26,7 +26,9 @@ import {
   faTruckPickup,
   faMagic,
   faClipboard,
-  faCheckCircle
+  faCheckCircle,
+  faPlus,
+  faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -42,7 +44,9 @@ library.add(
   faTruckPickup,
   faMagic,
   faClipboard,
-  faCheckCircle
+  faCheckCircle,
+  faPlus,
+  faMinus,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

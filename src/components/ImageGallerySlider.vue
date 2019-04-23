@@ -1,12 +1,12 @@
 <template>
   <section class="image-gallery">
     <div class="image-slider-control">
-      <h2>Our Gallery</h2>
+      <TitleAndSubtitle title="Our Gallery" subtitle="Some subtitle about the gallery.."></TitleAndSubtitle>
       <div>
-        <button v-on:click="decrementMargin()" :disabled="marginVal < -300 * 10">
+        <button v-on:click="incrementMargin()" :disabled="marginVal >= -30">
           <font-awesome-icon icon="arrow-left"/>
         </button>
-        <button v-on:click="incrementMargin()" :disabled="marginVal >= -30">
+        <button v-on:click="decrementMargin()" :disabled="marginVal < -300 * 10">
           <font-awesome-icon icon="arrow-right"/>
         </button>
       </div>
@@ -29,10 +29,16 @@
 </template>
 
 <script>
+import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
+
 export default {
   name: "ImageGallerySlider",
+  components: {
+    TitleAndSubtitle
+  },
   data() {
     return {
+      marginVal: 0,
       images: [
         {
           url: "/images/stock/1.jpg",
@@ -109,8 +115,7 @@ export default {
           category: "Quality Control",
           message: "im some message for image 15"
         }
-      ],
-      marginVal: -30
+      ]
     };
   },
   methods: {

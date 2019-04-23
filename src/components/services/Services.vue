@@ -1,10 +1,7 @@
 <template>
   <section>
     <div class="why-choose-us">
-      <div>
-        <h2>Why choose us?</h2>
-        <h3>Family owned and operated since 1855.</h3>
-      </div>
+      <TitleAndSubtitle title="Why choose us?" subtitle="Family owned and operated since 1855."></TitleAndSubtitle>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
     </div>
     <div class="tile-container">
@@ -22,11 +19,13 @@
 
 <script>
 import ServiceTile from "@/components/services/ServiceTile";
+import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
 
 export default {
   name: "Services",
   components: {
-    ServiceTile
+    ServiceTile,
+    TitleAndSubtitle
   }
 };
 </script>
@@ -41,20 +40,6 @@ section {
   justify-content: space-between;
   margin: 5rem auto;
   .why-choose-us {
-    div {
-      border-left: 4px solid $red;
-      padding-left: 0.5rem;
-      h2, h3 {
-        margin: 0;
-      }
-      h2 {
-        font-weight: bold;
-      }
-      h3 {
-        font-weight: lighter;
-        color: lighten($color: $black, $amount: 25);
-      }
-    }
     p {
       color: lighten($color: $black, $amount: 30);
     }
