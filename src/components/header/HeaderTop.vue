@@ -1,10 +1,7 @@
 <template>
   <div class="header-top">
     <router-link to="/">
-      <img
-        src="http://expressrepairservice.com/Content/img/express-service-logo.png"
-        alt="JB Long and Son Body Shop Logo"
-      >
+      <h1>JB Long and Son Body Shop</h1>
     </router-link>
     <div>
       <div class="phone">
@@ -42,8 +39,17 @@ export default {
   top: 0;
   padding: 1rem;
   background-color: $white;
-  img {
-    height: 50px;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
   }
   div {
     display: flex;
