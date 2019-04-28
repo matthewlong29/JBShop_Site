@@ -1,11 +1,11 @@
 <template>
   <div class="header-top">
-    <a href="/">
+    <router-link to="/">
       <img
         src="http://expressrepairservice.com/Content/img/express-service-logo.png"
         alt="JB Long and Son Body Shop Logo"
       >
-    </a>
+    </router-link>
     <div>
       <div class="phone">
         <font-awesome-icon icon="phone"/>

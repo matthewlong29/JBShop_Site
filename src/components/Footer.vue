@@ -65,22 +65,19 @@
         <h2>Navigation</h2>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <router-link to="#home">Home</router-link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <router-link to="#about">About</router-link>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <router-link to="#team">Team</router-link>
           </li>
           <li>
-            <a href="/team">Team</a>
+            <router-link to="#jobs">Jobs</router-link>
           </li>
           <li>
-            <a href="/jobs">Jobs</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
+            <router-link to="#contact">Contact</router-link>
           </li>
         </ul>
       </div>

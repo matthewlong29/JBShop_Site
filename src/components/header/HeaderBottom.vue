@@ -1,24 +1,21 @@
 <template>
   <nav>
     <ul>
-      <a href="/">
+      <router-link to="#home">
         <li>Home</li>
-      </a>
-      <a href="/about">
+      </router-link>
+      <router-link to="#about">
         <li>About</li>
-      </a>
-      <a href="/services">
-        <li>Services</li>
-      </a>
-      <a href="/team">
+      </router-link>
+      <router-link to="#team">
         <li>Our Team</li>
-      </a>
-      <a href="/jobs">
+      </router-link>
+      <router-link to="#jobs">
         <li>Jobs</li>
-      </a>
-      <a href="/contact">
+      </router-link>
+      <router-link to="#contact">
         <li>Contact</li>
-      </a>
+      </router-link>
     </ul>
   </nav>
 </template>
