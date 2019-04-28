@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="team">
     <TitleAndSubtitle title="Meet Us!" subtitle="Family owned and operated!"></TitleAndSubtitle>
     <div class="team">
       <Profile
@@ -65,6 +65,7 @@ export default {
 section {
   @extend %container;
   margin-bottom: 5rem;
+  margin-top: 5rem;
   div.team {
     display: flex;
     flex-wrap: wrap;

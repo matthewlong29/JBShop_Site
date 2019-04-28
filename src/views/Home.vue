@@ -1,14 +1,16 @@
 <template>
-  <main>
+  <main id="home">
     <MainSlider></MainSlider>
-    <Services></Services>
-    <MeetUs></MeetUs>
+    <Services id="about"></Services>
     <CallToAction
       message="Walk-ins are always welcome, or call now to book an appointment!"
       link="tel:5026954477"
       linkMessage="(502) 695-4477"
     ></CallToAction>
+    <MeetUs id="team"></MeetUs>
+
     <ImageGallerySlider></ImageGallerySlider>
+    <Contact id="contact"></Contact>
     <GoogleMaps></GoogleMaps>
     <Footer></Footer>
   </main>
@@ -22,6 +24,7 @@ import Footer from "@/components/Footer";
 import GoogleMaps from "@/components/GoogleMaps";
 import ImageGallerySlider from "@/components/ImageGallerySlider";
 import MeetUs from "@/components/meet-us/MeetUs";
+import Contact from "@/components/Contact";
 
 export default {
   name: "home",
@@ -32,7 +35,8 @@ export default {
     Footer,
     GoogleMaps,
     ImageGallerySlider,
-    MeetUs
+    MeetUs,
+    Contact
   }
 };
 </script>

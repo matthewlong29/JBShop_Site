@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <gmap-map :center="center" :zoom="12" style="width:100%;  height: 400px;">
       <gmap-marker
         :key="index"
@@ -8,7 +8,7 @@
         @click="center=m.position"
       ></gmap-marker>
     </gmap-map>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -64,7 +64,7 @@ export default {
 #map {
   height: 100%;
 }
-div {
+section {
   border-top: 2px solid $red;
 }
 </style>
