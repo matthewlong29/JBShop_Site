@@ -58,7 +58,7 @@ export default {
      */
     calculateProgressPercentage() {
       this.progressPercentage = (this.timeLeft / this.originalTime) * 100;
-      console.log(this.progressPercentage);
+      // console.log(this.progressPercentage);
       // reset progress and restart countdown
       if (this.progressPercentage <= 0) {
         setTimeout(this.resetProgressPercentage(), 5000);
@@ -86,10 +86,10 @@ export default {
      */
     incrementCounter() {
       if (this.counter === 2) {
-        console.log("counter is " + this.counter);
+        // console.log("counter is " + this.counter);
         this.counter = 0;
       } else {
-        console.log("counter is " + this.counter);
+        // console.log("counter is " + this.counter);
         this.counter++;
       }
     }
