@@ -114,7 +114,11 @@ export default {
 @import "../styles/scss/placeholders";
 
 footer {
-  background-color: darken($color: $blue, $amount: 20);
+  @include createBackground(
+    darken($color: $blue, $amount: 20),
+    darken($color: $blue, $amount: 23),
+    "/images/textures/concrete-dark.jpg"
+  );
   border-top: 4px solid darken($color: $red, $amount: 10);
   .main-footer-content {
     @extend %container;

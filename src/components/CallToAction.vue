@@ -18,9 +18,13 @@ export default {
 @import "../styles/scss/variables";
 @import "../styles/scss/placeholders";
 
-section.call-to-action {
+.call-to-action {
+  @include createBackground(
+    lighten($color: $red, $amount: 0.5),
+    lighten($color: $red, $amount: 2),
+    "/images/textures/concrete-dark.jpg"
+  );
   width: 100vw;
-  background-color: lighten($color: $red, $amount: 1);
   padding: 50px 0;
   div {
     @extend %container;
@@ -37,9 +41,13 @@ section.call-to-action {
       font-weight: normal;
     }
     a {
+      @include createBackground(
+        darken($color: $red, $amount: 20),
+        darken($color: $red, $amount: 20),
+        "/images/textures/concrete-dark.jpg"
+      );
       color: $white;
       text-decoration: none;
-      background-color: darken($color: $red, $amount: 20);
       padding: 10px;
     }
   }
