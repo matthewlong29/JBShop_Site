@@ -66,9 +66,6 @@ export default {
   }
   &:hover {
     box-shadow: 0 0 4px transparentize($color: $black, $amount: 0.75);
-    svg {
-      color: $white;
-    }
   }
 }
 
@@ -143,8 +140,7 @@ export default {
         color: darken($color: $red, $amount: 45);
         letter-spacing: -1px;
       }
-      &:before,
-      &:after {
+      &:before {
         content: "";
         display: block;
         height: 1px;

@@ -72,12 +72,11 @@ section {
   @extend %container;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  div.team {
+  .team {
     display: flex;
     flex-wrap: wrap;
     .member {
-      margin: 0 0.25rem;
-      margin-bottom: 0.5rem;
+      margin: 16px;
     }
   }
 }

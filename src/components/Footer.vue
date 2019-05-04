@@ -4,21 +4,23 @@
       <div class="contact">
         <h2>Contact Us</h2>
         <p>Ready to get the car repaired? Then contact us now! The best way you can do that is by phone. Another popular option is to simply drop by; so don't hesitate in doing so.</p>
-        <p>
-          <span>Phone:</span>
-          <span>
-            <a href="tel:5026954477">(502) 695-4477</a>
-            <br>
-            <a href="tel:5026952041">(502) 695-2041</a>
-          </span>
-        </p>
-        <p>
-          <span>Address:</span>
-          <span class="address">
-            107 Collision Center Dr.
-            <br>Frankfort, KY 40601
-          </span>
-        </p>
+        <div class="methods-container">
+          <p>
+            <span class="method">Phone:</span>
+            <span>
+              <a href="tel:5026954477">&nbsp;(502) 695-4477</a>
+              <br>
+              <a href="tel:5026952041">&nbsp;(502) 695-2041</a>
+            </span>
+          </p>
+          <p>
+            <span class="method">Address:</span>
+            <span class="address">
+              107 Collision Center Dr.
+              <br>Frankfort, KY 40601
+            </span>
+          </p>
+        </div>
       </div>
       <div class="services">
         <h2>Services</h2>
@@ -119,12 +121,12 @@ footer {
     darken($color: $blue, $amount: 23),
     "/images/textures/concrete-dark.jpg"
   );
-  border-top: 4px solid darken($color: $red, $amount: 10);
   .main-footer-content {
     @extend %container;
     display: flex;
     justify-content: space-between;
     color: $white;
+    flex-wrap: wrap;
     .contact,
     .services,
     .hours-of-operation,
@@ -132,8 +134,18 @@ footer {
       font-size: 0.75rem;
       width: 100%;
       padding: 0 10px;
+      flex: 1 1 240px;
       h2 {
         text-align: center;
+        &:after {
+          content: "";
+          display: block;
+          width: 48px;
+          height: 1px;
+          background-color: $red;
+          margin: 0 auto;
+          margin-top: 6px;
+        }
       }
       a {
         color: $red;
@@ -143,11 +155,23 @@ footer {
     .contact {
       p {
         display: flex;
+        flex-wrap: wrap;
         span {
           display: inline-block;
           &.address {
             color: $red;
           }
+        }
+      }
+      .methods-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p {
+          min-width: 170px;
+        }
+        .method {
+          padding-right: 6px;
         }
       }
     }
@@ -157,7 +181,11 @@ footer {
         li {
           list-style: none;
           color: $white;
-          padding-bottom: 15px;
+          padding-bottom: 8px;
+          text-align: center;
+          svg {
+            padding-right: 6px;
+          }
           &:hover {
             svg {
               color: $red;
@@ -182,7 +210,7 @@ footer {
         li {
           list-style: none;
           text-align: center;
-          padding: 4;
+          padding-bottom: 14px;
           a {
             font-size: 0.75rem;
             color: $white;
@@ -194,6 +222,16 @@ footer {
         }
       }
     }
+    @media (max-width: 1200px) {
+      .services {
+        display: none;
+      }
+    }
+    @media (max-width: 994px) {
+      .navigation {
+        display: none;
+      }
+    }
   }
   .copyright {
     padding: 5px;
@@ -202,6 +240,7 @@ footer {
     p {
       @extend %container;
       font-size: 0.7rem;
+      letter-spacing: 1px;
     }
   }
 }

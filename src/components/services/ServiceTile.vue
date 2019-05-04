@@ -66,6 +66,7 @@ export default {
       font-style: italic;
       font-family: $bodyFont;
       color: $red;
+      letter-spacing: -1px;
     }
     h2 {
       font-size: 18px;
