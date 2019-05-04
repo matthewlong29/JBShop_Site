@@ -1,6 +1,6 @@
 <template>
   <section>
-    <gmap-map :center="center" :zoom="12" style="width:100%;  height: 400px;">
+    <gmap-map :center="center" :zoom="16" style="width:100%;  height: 400px;">
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"
@@ -16,8 +16,13 @@ export default {
   name: "GoogleMap",
   data() {
     return {
-      center: { lat: 38.193002, lng: -84.827381 },
-      markers: [],
+      center: { lat: 38.192279, lng: -84.827336 },
+      markers: [
+        {
+          name: "JB Long and Son Body Shop",
+          position: { lat: 38.192279, lng: -84.827336 }
+        }
+      ],
       places: [],
       currentPlace: null
     };
@@ -28,7 +33,6 @@ export default {
   },
 
   methods: {
-    // receives a place object via the autocomplete component
     setPlace(place) {
       this.currentPlace = place;
     },
@@ -64,7 +68,9 @@ export default {
 #map {
   height: 100%;
 }
+
 section {
-  border-top: 2px solid $red;
+  border-top: 4px solid $red;
+  border-bottom: 4px solid $red;
 }
 </style>
