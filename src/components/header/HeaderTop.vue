@@ -4,13 +4,15 @@
       <h1>JB Long and Son Body Shop</h1>
     </router-link>
     <div>
-      <div class="phone">
-        <font-awesome-icon icon="phone"/>
-        <div>
-          <span class="message">Call Us Now</span>
-          <span>(502) 695-4477</span>
+      <a href="tel:5026954477">
+        <div class="phone">
+          <font-awesome-icon icon="phone"/>
+          <div>
+            <span class="message">Call Us Now</span>
+            <span>(502) 695-4477</span>
+          </div>
         </div>
-      </div>
+      </a>
       <div class="hours-of-operation">
         <font-awesome-icon icon="clock"/>
         <div>
@@ -47,6 +49,8 @@ export default {
   background-color: $white;
   height: 50px;
   width: calc(100% - 2rem);
+  box-shadow: 0 0 8px 5px transparentize($color: $black, $amount: 0.875);
+  z-index: 1;
   a {
     text-decoration: none;
     color: $black;
