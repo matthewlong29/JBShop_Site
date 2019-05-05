@@ -31,15 +31,22 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/scss/variables";
 @import "../../styles/scss/placeholders";
+
+* {
+  transition: all ease-in-out 0.25s;
+}
+
 .header-top {
   @extend %container;
   display: flex;
   justify-content: space-between;
   position: fixed;
+  flex-wrap: wrap;
   top: 0;
   padding: 1rem;
   background-color: $white;
   height: 50px;
+  width: calc(100% - 2rem);
   a {
     text-decoration: none;
     color: $black;
@@ -53,6 +60,7 @@ export default {
   }
   div {
     display: flex;
+    flex-wrap: wrap;
     .phone,
     .hours-of-operation {
       display: flex;
@@ -75,6 +83,53 @@ export default {
     .phone {
       border-right: 2px solid $red;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .header-top {
+    a {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    div {
+      .phone,
+      .hours-of-operation {
+        font-size: 0.75rem;
+        padding: 0 0.5rem;
+        svg {
+          width: 15px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .header-top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-top {
+    div {
+      .phone,
+      .hours-of-operation {
+        svg {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 303px) {
+  .header-top {
+    padding: 1rem 0.5rem;
+    width: calc(100% - 1rem);
   }
 }
 </style>

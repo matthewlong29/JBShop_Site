@@ -29,6 +29,11 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/scss/variables";
 @import "../../styles/scss/placeholders";
+
+* {
+  transition: all ease-in-out 0.25s;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -56,6 +61,45 @@ nav {
         height: 50px;
         padding: 0 20px;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  nav {
+    font-size: 14px;
+    ul {
+      a {
+        li {
+          padding: 0 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  nav {
+    font-size: 12px;
+    ul {
+      a {
+        li {
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 323px) {
+  nav {
+    font-size: 12px;
+    ul {
+      a {
+        li {
+          padding: 0 14px;
+        }
       }
     }
   }

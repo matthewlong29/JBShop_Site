@@ -149,7 +149,7 @@ export default {
           movingRight = !movingLeft;
         }
       }
-    }, 500);
+    }, 1500);
   },
   methods: {
     /*****
