@@ -41,7 +41,6 @@ nav {
   height: calc(18px + 2rem);
   background-color: $blue;
   ul {
-    @extend %container;
     display: flex;
     list-style: none;
     padding: 0;
