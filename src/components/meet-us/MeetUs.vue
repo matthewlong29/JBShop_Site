@@ -1,6 +1,6 @@
 <template>
   <section id="team">
-    <TitleAndSubtitle title="Meet Us!" subtitle="Family owned and operated!"></TitleAndSubtitle>
+    <TitleAndSubtitle title="Meet the Team!" subtitle="We're proudly family owned and operated!"></TitleAndSubtitle>
     <div class="team">
       <Profile
         class="member"

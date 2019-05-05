@@ -1,16 +1,42 @@
 <template>
   <section class="call-to-action">
-    <div>
-      <h2>{{message}}</h2>
-      <a :href="link">{{linkMessage}}</a>
+    <div class="content-container">
+      <h2>
+        <strong>Walk-ins</strong> are always welcome!
+      </h2>
+      <h3>
+        or
+        <strong>Call now</strong> to book an appointment!
+      </h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <Button
+        link="tel:5026954477"
+        topText="(502) 695-4477"
+        bottomText="Call now to schedule your free consultation!"
+        icon="phone"
+      ></Button>
     </div>
+    <div class="image-container" :style="{height: `${contentHeight + 75}px`}"></div>
   </section>
 </template>
 
 <script>
+import Button from "@/components/partials/Button";
+
 export default {
   name: "CallToAction",
-  props: ["message", "link", "linkMessage"]
+  components: { Button },
+  data() {
+    return {
+      contentHeight: 0
+    };
+  },
+  mounted() {
+    window.addEventListener("load", () => {
+      this.contentHeight = this.$el.firstElementChild.clientHeight;
+      console.log("this.contentHeight: " + this.contentHeight);
+    });
+  }
 };
 </script>
 
@@ -18,50 +44,60 @@ export default {
 @import "../styles/scss/variables";
 @import "../styles/scss/placeholders";
 
+* {
+  transition: all ease-in-out 0.25s;
+}
+
 .call-to-action {
-  @include createBackground(
-    lighten($color: $red, $amount: 0.5),
-    lighten($color: $red, $amount: 2),
-    "/images/textures/concrete-dark.jpg"
-  );
+  display: flex;
+  align-items: center;
   width: 100vw;
-  padding: 50px 0;
-  div {
+  .content-container {
     @extend %container;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid transparentize($color: $white, $amount: 0.5);
-    background-color: darken($color: $red, $amount: 5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 5rem;
+    width: calc(200% / 3);
+    min-height: 300px;
+    background: repeating-linear-gradient(
+      -55deg,
+      lighten($color: $red, $amount: 15),
+      lighten($color: $red, $amount: 15) 300px,
+      lighten($color: $red, $amount: 28) 300px,
+      lighten($color: $red, $amount: 28) 600px
+    );
     color: $white;
     border-radius: 2px;
-    h2 {
+    h2,
+    h3,
+    p {
+      color: $black;
       font-weight: normal;
-      max-width: 800px;
+      margin: 0;
     }
-    a {
-      @include createBackground(
-        darken($color: $red, $amount: 20),
-        darken($color: $red, $amount: 20),
-        "/images/textures/concrete-dark.jpg"
-      );
-      display: flex;
-      justify-content: center;
-      color: $white;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 2px;
-      min-width: 120px;
-      box-shadow: 0 0 6px 3px transparentize($color: $black, $amount: 0.75), 0 0 0 1px transparentize($color: $black, $amount: 0.15);
-      transition: box-shadow ease-in-out 0.15s;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 0 8px 4px transparentize($color: $black, $amount: 0.75), 0 0 0 1px transparentize($color: $black, $amount: 0.15);
-      }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    p {
+      padding: 1rem 0 3rem;
+    }
+  }
+  .image-container {
+    width: calc(100% / 3);
+    background: url("/images/banner.jpg");
+    background-position: center right;
+    background-size: cover;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 0 4px 2px transparentize($color: $black, $amount: 0.75);
+  }
+  &:hover {
+    .image-container {
+      box-shadow: 0 0 12px 3px transparentize($color: $black, $amount: 0.75);
     }
   }
 }

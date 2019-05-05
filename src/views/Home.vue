@@ -2,13 +2,9 @@
   <main id="home">
     <MainSlider></MainSlider>
     <Services id="about"></Services>
-    <CallToAction
-      message="Walk-ins are always welcome, or call now to book an appointment!"
-      link="tel:5026954477"
-      linkMessage="(502) 695-4477"
-    ></CallToAction>
+    <CallToAction></CallToAction>
     <MeetUs id="team"></MeetUs>
-
+    <NowHiring id="jobs"></NowHiring>
     <ImageGallerySlider></ImageGallerySlider>
     <Contact id="contact"></Contact>
     <GoogleMaps></GoogleMaps>
@@ -19,6 +15,7 @@
 <script>
 import MainSlider from "@/components/MainSlider";
 import Services from "@/components/services/Services";
+import NowHiring from "@/components/openings/NowHiring";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import GoogleMaps from "@/components/GoogleMaps";
@@ -36,7 +33,8 @@ export default {
     GoogleMaps,
     ImageGallerySlider,
     MeetUs,
-    Contact
+    Contact,
+    NowHiring
   }
 };
 </script>
