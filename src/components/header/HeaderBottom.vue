@@ -40,6 +40,7 @@ nav {
   top: 82px;
   height: calc(18px + 2rem);
   background-color: $blue;
+  z-index: 2;
   ul {
     display: flex;
     list-style: none;

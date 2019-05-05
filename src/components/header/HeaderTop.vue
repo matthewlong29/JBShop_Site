@@ -50,7 +50,7 @@ export default {
   height: 50px;
   width: calc(100% - 2rem);
   box-shadow: 0 0 8px 5px transparentize($color: $black, $amount: 0.875);
-  z-index: 1;
+  z-index: 3;
   a {
     text-decoration: none;
     color: $black;
