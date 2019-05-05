@@ -16,7 +16,7 @@
         icon="phone"
       ></Button>
     </div>
-    <div class="image-container" :style="{height: `${contentHeight + 75}px`}"></div>
+    <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>
   </section>
 </template>
 
@@ -98,6 +98,17 @@ export default {
   &:hover {
     .image-container {
       box-shadow: 0 0 12px 3px transparentize($color: $black, $amount: 0.75);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .call-to-action {
+    .content-container {
+      width: 100%;
+    }
+    .image-container {
+      display: none;
     }
   }
 }
