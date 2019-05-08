@@ -45,9 +45,10 @@ export default {
 section {
   @extend %container;
   .contact-information {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     .address,
     .hours-of-operation,
     .phone {

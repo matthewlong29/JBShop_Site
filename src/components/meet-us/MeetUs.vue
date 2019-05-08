@@ -1,45 +1,51 @@
 <template>
   <section id="team">
-    <TitleAndSubtitle title="Meet Us!" subtitle="Family owned and operated!"></TitleAndSubtitle>
+    <TitleAndSubtitle title="Meet the Team!" subtitle="We're proudly family owned and operated!"></TitleAndSubtitle>
     <div class="team">
       <Profile
         class="member"
-        image="/images/team/jblong.jpg"
+        profileImage="/images/team/jblong.jpg"
+        bgImage="/images/stock/1.jpg"
         name="JB Long"
         jobTitle="Owner"
         message="The shop exists because of this guy. JB has been at the shop since before it was called JB Long and Son Body Shop. He is very experienced with all things cars; he was even a pit crew mechanic for Tony Schiller (ARCA Racing Series Veteran) in the 1970's."
       ></Profile>
       <Profile
         class="member"
-        image="/images/team/peggy.jpg"
+        profileImage="/images/team/peggy.jpg"
+        bgImage="/images/stock/2.jpg"
         name="Peggy Long"
         jobTitle="Owner"
         message="Peggy has also been at the shop from the start. She keeps the office in working order. On a typical day Peggy spends her time interacting with customers and checking over cars before they're finalized. If they pass her inspection the car is ready."
       ></Profile>
       <Profile
         class="member"
-        image="/images/team/john.jpg"
+        profileImage="/images/team/john.jpg"
+        bgImage="/images/stock/3.jpg"
         name="John Long"
         jobTitle="Manager"
         message="John, son of Peggy and JB, has worked in nearly every position at the shop. He is currently the manager, and has been for 20 years. There are three guys who make estimates at the shop (JB, John, and Karlen). John is always the first in line to make an estimate."
       ></Profile>
       <Profile
         class="member"
-        image="/images/team/shari.jpg"
+        profileImage="/images/team/shari.jpg"
+        bgImage="/images/stock/4.jpg"
         name="Shari Long"
         jobTitle="Secretary"
         message="Shari, Johns wife, has worked at the shop as the secretary since 1989. She took off for a few years when she and John had children. Shari is the person who you are most likely to talk to when you give us a call."
       ></Profile>
       <Profile
         class="member"
-        image="/images/team/karlen.jpg"
+        profileImage="/images/team/karlen.jpg"
+        bgImage="/images/stock/5.jpg"
         name="Karlen Morris"
         jobTitle="Asst. Manager"
         message="Like John, Karlen has worked in nearly every position at the shop. He actually holds a number of job titles, but we decided assistant manager fits best. Responsibilities include assisting shop management, parts manager, and working with insurance adjusters."
       ></Profile>
       <Profile
         class="member"
-        image="/images/team/cassie.jpg"
+        profileImage="/images/team/cassie.jpg"
+        bgImage="/images/stock/6.jpg"
         name="Cassie Long"
         jobTitle="Asst. Secretary"
         message="Cassie is the newest addition to the shop. Don't hold that against her though; she's sharp and always eager to help out. Cassie does all the odds and ins with getting your car looking back to how you want it!"
@@ -66,12 +72,11 @@ section {
   @extend %container;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  div.team {
+  .team {
     display: flex;
     flex-wrap: wrap;
     .member {
-      margin: 0 0.25rem;
-      margin-bottom: 0.5rem;
+      margin: 16px;
     }
   }
 }

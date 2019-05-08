@@ -34,12 +34,14 @@ h4,
 h5,
 h6 {
   font-family: $titleFont;
+  letter-spacing: 1px;
 }
 
 p,
 span,
 a {
   font-family: $bodyFont;
+  letter-spacing: -1px;
 }
 .fade-enter-active,
 .fade-leave-active {

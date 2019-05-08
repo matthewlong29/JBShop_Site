@@ -1,12 +1,15 @@
 <template>
-  <section class="image-gallery">
+  <section id="image-gallery">
     <div class="image-slider-control">
       <TitleAndSubtitle title="Our Gallery" subtitle="Some subtitle about the gallery.."></TitleAndSubtitle>
       <div>
-        <button v-on:click="incrementMargin()" :disabled="marginVal >= -30">
+        <button v-on:click="incrementMargin(); userHasControl = true" :disabled="marginVal >= -30">
           <font-awesome-icon icon="arrow-left"/>
         </button>
-        <button v-on:click="decrementMargin()" :disabled="marginVal < -300 * 10">
+        <button
+          v-on:click="decrementMargin(); userHasControl = true"
+          :disabled="marginVal < -imageWidth * 11"
+        >
           <font-awesome-icon icon="arrow-right"/>
         </button>
       </div>
@@ -16,7 +19,7 @@
         class="image"
         v-for="image in images"
         :key="image.id"
-        :style="{backgroundImage: `url(${image.url})`}"
+        :style="{ flex: `0 0 ${imageWidth}px`, backgroundImage: `url(${image.url})`}"
       >
         <div class="overlay-top"></div>
         <div class="overlay-bottom">
@@ -30,6 +33,7 @@
 
 <script>
 import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
+import { setTimeout, setInterval, clearTimeout } from "timers";
 
 export default {
   name: "ImageGallerySlider",
@@ -39,6 +43,8 @@ export default {
   data() {
     return {
       marginVal: 0,
+      userHasControl: false,
+      imageWidth: null,
       images: [
         {
           url: "/images/stock/1.jpg",
@@ -118,26 +124,71 @@ export default {
       ]
     };
   },
+  /*****
+   *
+   */
+  beforeMount() {
+    this.calculateImageWidth();
+  },
+  /*****
+   * when component is created: increments and decrements margin while user doesnt have control.
+   */
+  created() {
+    window.addEventListener("resize", this.calculateImageWidth);
+
+    let movingRight = true;
+    let movingLeft = false;
+
+    setInterval(() => {
+      if (!this.userHasControl) {
+        if (movingRight) {
+          movingRight = this.decrementMargin();
+          movingLeft = !movingRight;
+        } else {
+          movingLeft = this.incrementMargin();
+          movingRight = !movingLeft;
+        }
+      }
+    }, 1500);
+  },
   methods: {
     /*****
+     * decrementMargin: decrement margin by the width of the image.
      * TODO: instead of incrementing width of images increment by width of section / num of images
      */
     decrementMargin() {
-      if (this.marginVal > -300 * 10) {
-        this.marginVal -= 310;
-        console.log(`changed marginVal to ${this.marginVal}`);
-      } else {
-        console.log("cannot decrement any further");
+      if (this.marginVal > -this.imageWidth * 11) {
+        this.marginVal -= this.imageWidth + 24;
+        return true;
       }
+
+      return false;
     },
     /*****
+     * incrementMargin: increment margin by the width of the image.
      */
     incrementMargin() {
       if (this.marginVal < 0) {
-        this.marginVal += 310;
-        console.log(`changed marginVal to ${this.marginVal}`);
+        this.marginVal += this.imageWidth + 24;
+        return true;
+      }
+
+      return false;
+    },
+    /*****
+     * calculateImageWidth: calculate image width based on size of window.
+     */
+    calculateImageWidth() {
+      const clientWidth = document.documentElement.clientWidth;
+
+      if (clientWidth > 800) {
+        this.imageWidth = clientWidth / 4 - 24;
+      } else if (clientWidth <= 800 && clientWidth > 600) {
+        this.imageWidth = clientWidth / 3 - 24;
+      } else if (clientWidth <= 600 && clientWidth > 400) {
+        this.imageWidth = clientWidth / 2 - 24;
       } else {
-        console.log("cannot increment any further");
+        this.imageWidth = clientWidth - 24;
       }
     }
   }
@@ -159,10 +210,10 @@ export default {
   }
 }
 
-section.image-gallery {
+#image-gallery {
   overflow: hidden;
   margin: 5rem auto;
-  div.image-slider-control {
+  .image-slider-control {
     @extend %container;
     display: flex;
     justify-content: space-between;
@@ -174,14 +225,15 @@ section.image-gallery {
       background: transparent;
     }
   }
-  div.images-container {
+  .images-container {
     display: flex;
     width: 100%;
     transition: margin-left ease-in-out 0.25s;
-    div.image {
+    white-space: nowrap;
+    .image {
+      flex: auto;
       height: 200px;
-      min-width: 296px;
-      margin: 10px 0 10px 10px;
+      margin: 10px;
       background-size: cover;
       background-position: center;
       border: 2px solid lighten($color: $red, $amount: 5);

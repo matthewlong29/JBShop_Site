@@ -5,12 +5,18 @@
       <h2>{{title}}</h2>
       <p>{{description}}</p>
     </div>
-    <div class="service-image" :style="{backgroundImage: `url(${image})`}">
+    <div
+      class="service-image"
+      :style="{backgroundImage: `url(${image})`, borderRadius: '0 2px 2px 0'}"
+    >
       <div class="arrow-right"></div>
     </div>
   </div>
   <div class="service-tile" v-else>
-    <div class="service-image" :style="{backgroundImage: `url(${image})`}">
+    <div
+      class="service-image"
+      :style="{backgroundImage: `url(${image})`, borderRadius: '2px 0 0 2px'}"
+    >
       <div class="arrow-left"></div>
     </div>
     <div class="service-description">
@@ -48,6 +54,7 @@ export default {
   box-shadow: 1px 1px 4px -2px $black, 5px 5px 0px 0px $blue;
   transition: box-shadow ease-in-out 0.25s;
   margin: 16px;
+  border-radius: 2px;
   .service-image {
     background-size: cover;
     background-position: center;
@@ -66,6 +73,7 @@ export default {
       font-style: italic;
       font-family: $bodyFont;
       color: $red;
+      letter-spacing: -1px;
     }
     h2 {
       font-size: 18px;

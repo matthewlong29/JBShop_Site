@@ -1,24 +1,21 @@
 <template>
   <main id="home">
-    <MainSlider></MainSlider>
+    <MainSlider id="main-slider"></MainSlider>
     <Services id="about"></Services>
-    <CallToAction
-      message="Walk-ins are always welcome, or call now to book an appointment!"
-      link="tel:5026954477"
-      linkMessage="(502) 695-4477"
-    ></CallToAction>
+    <CallToAction id="call-to-action"></CallToAction>
     <MeetUs id="team"></MeetUs>
-
-    <ImageGallerySlider></ImageGallerySlider>
+    <NowHiring id="jobs"></NowHiring>
+    <ImageGallerySlider id="image-gallery"></ImageGallerySlider>
     <Contact id="contact"></Contact>
-    <GoogleMaps></GoogleMaps>
-    <Footer></Footer>
+    <GoogleMaps id="google-maps"></GoogleMaps>
+    <Footer id="footer"></Footer>
   </main>
 </template>
 
 <script>
 import MainSlider from "@/components/MainSlider";
 import Services from "@/components/services/Services";
+import NowHiring from "@/components/openings/NowHiring";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import GoogleMaps from "@/components/GoogleMaps";
@@ -36,7 +33,8 @@ export default {
     GoogleMaps,
     ImageGallerySlider,
     MeetUs,
-    Contact
+    Contact,
+    NowHiring
   }
 };
 </script>

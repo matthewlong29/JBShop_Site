@@ -29,6 +29,7 @@ div.gallery-title-container {
   h3 {
     font-weight: lighter;
     color: lighten($color: $black, $amount: 25);
+    letter-spacing: -1px;
   }
 }
 </style>

@@ -104,12 +104,15 @@ export default {
 @import "../styles/scss/variables";
 @import "../styles/scss/placeholders";
 
+* {
+  transition: all 0.25s ease-in-out;
+}
+
 section {
   height: 400px;
   background-size: cover;
   background-position: center;
   border-bottom: 4px solid $red;
-  transition: background-image 0.25s ease-in-out;
   .slider-content-container {
     display: flex;
     justify-content: space-between;
@@ -156,6 +159,21 @@ section {
     height: 4px;
     margin: 0;
     transition: width 1.2s;
+  }
+}
+
+@media (max-width: 570px) {
+  section {
+    .slider-content-container {
+      .messages-container {
+        h1 {
+          font-size: 1.25rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 </style>

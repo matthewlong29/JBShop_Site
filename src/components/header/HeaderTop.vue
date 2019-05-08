@@ -4,13 +4,15 @@
       <h1>JB Long and Son Body Shop</h1>
     </router-link>
     <div>
-      <div class="phone">
-        <font-awesome-icon icon="phone"/>
-        <div>
-          <span class="message">Call Us Now</span>
-          <span>(502) 695-4477</span>
+      <a href="tel:5026954477">
+        <div class="phone">
+          <font-awesome-icon icon="phone"/>
+          <div>
+            <span class="message">Call Us Now</span>
+            <span>(502) 695-4477</span>
+          </div>
         </div>
-      </div>
+      </a>
       <div class="hours-of-operation">
         <font-awesome-icon icon="clock"/>
         <div>
@@ -31,15 +33,24 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/scss/variables";
 @import "../../styles/scss/placeholders";
+
+* {
+  transition: all ease-in-out 0.25s;
+}
+
 .header-top {
   @extend %container;
   display: flex;
   justify-content: space-between;
   position: fixed;
+  flex-wrap: wrap;
   top: 0;
   padding: 1rem;
   background-color: $white;
   height: 50px;
+  width: calc(100% - 2rem);
+  box-shadow: 0 0 8px 5px transparentize($color: $black, $amount: 0.875);
+  z-index: 3;
   a {
     text-decoration: none;
     color: $black;
@@ -53,6 +64,7 @@ export default {
   }
   div {
     display: flex;
+    flex-wrap: wrap;
     .phone,
     .hours-of-operation {
       display: flex;
@@ -75,6 +87,53 @@ export default {
     .phone {
       border-right: 2px solid $red;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .header-top {
+    a {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    div {
+      .phone,
+      .hours-of-operation {
+        font-size: 0.75rem;
+        padding: 0 0.5rem;
+        svg {
+          width: 15px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .header-top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-top {
+    div {
+      .phone,
+      .hours-of-operation {
+        svg {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 303px) {
+  .header-top {
+    padding: 1rem 0.5rem;
+    width: calc(100% - 1rem);
   }
 }
 </style>

@@ -24,3 +24,14 @@
     width: 1170px;
   }
 }
+
+@mixin createBackground($colorOne, $colorTwo, $imageURL) {
+  background: linear-gradient(
+      transparentize($color: $colorOne, $amount: 0.1),
+      transparentize($color: $colorTwo, $amount: 0.1)
+    ),
+    url($imageURL);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 500px;
+}
