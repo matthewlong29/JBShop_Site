@@ -5,18 +5,31 @@
         title="Join Our Team!"
         subtitle="If you think you'd be a good fit, or see an open position below that you're interested in, fill out an application and call now to schedule an interview!"
       ></TitleAndSubtitle>
-      <Button link="http://www.google.com" icon="file-download" topText="Download" bottomText="Application"></Button>
+      <Button
+        link="http://www.google.com"
+        icon="file-download"
+        topText="Download"
+        bottomText="Application"
+      ></Button>
     </div>
+    <Opening
+      icon="wrench"
+      jobTitle="Body Technician"
+      areaOfWork="Body"
+      datePosted="04/18/19"
+      jobDescription="Something about this job.. make it sound good"
+    ></Opening>
   </section>
 </template>
 
 <script>
 import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
 import Button from "@/components/partials/Button";
+import Opening from "@/components/openings/Opening";
 
 export default {
   name: "NowHiring",
-  components: { TitleAndSubtitle, Button }
+  components: { TitleAndSubtitle, Button, Opening }
 };
 </script>
 

@@ -1,14 +1,14 @@
 <template>
   <main id="home">
-    <MainSlider></MainSlider>
+    <MainSlider id="main-slider"></MainSlider>
     <Services id="about"></Services>
-    <CallToAction></CallToAction>
+    <CallToAction id="call-to-action"></CallToAction>
     <MeetUs id="team"></MeetUs>
     <NowHiring id="jobs"></NowHiring>
-    <ImageGallerySlider></ImageGallerySlider>
+    <ImageGallerySlider id="image-gallery"></ImageGallerySlider>
     <Contact id="contact"></Contact>
-    <GoogleMaps></GoogleMaps>
-    <Footer></Footer>
+    <GoogleMaps id="google-maps"></GoogleMaps>
+    <Footer id="footer"></Footer>
   </main>
 </template>
 
