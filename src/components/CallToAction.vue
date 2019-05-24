@@ -16,7 +16,11 @@
         icon="phone"
       ></Button>
     </div>
-    <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>
+    <div
+      class="image-container"
+      :style="{height: `${contentHeight + (contentHeight / 5)}px`}"
+      v-lazy:background-image="'/images/call-to-action.jpg'"
+    ></div>
   </section>
 </template>
 
@@ -89,7 +93,6 @@ export default {
   }
   .image-container {
     width: calc(100% / 3);
-    background: url("/images/banner.jpg");
     background-position: center right;
     background-size: cover;
     border-radius: 6px 0 0 6px;

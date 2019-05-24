@@ -1,8 +1,10 @@
 <template>
   <div class="profile-card" v-bind:class="{ flip: viewDescription }">
     <div class="front">
-      <div class="profile-background" :style="{ backgroundImage: `url(${bgImage})`}">
-        <img :src="profileImage" :alt="'Image of ' + name">
+      <div class="profile-background" v-lazy:background-image="bgImage">
+        <div class="profile-overlay">
+          <img :alt="'Image of ' + name" v-lazy="profileImage">
+        </div>
       </div>
       <div class="titles">
         <h2>{{name}}</h2>
@@ -13,7 +15,7 @@
         <font-awesome-icon v-if="viewDescription" icon="user-minus"/>
       </button>
     </div>
-    <div class="back">
+    <div class="back" v-lazy:background-image="bgImage">
       <p>{{message}}</p>
       <button v-on:click="toggleDescription()">
         <font-awesome-icon v-if="!viewDescription" icon="user-plus"/>
@@ -83,11 +85,6 @@ export default {
   .front,
   .back {
     border-radius: 8px;
-    @include createBackground(
-      darken($color: $red, $amount: 2),
-      darken($color: $red, $amount: 2),
-      "/images/textures/concrete-dark.jpg"
-    );
     box-shadow: 0 0 2px transparentize($color: $black, $amount: 0.05);
     height: 100%;
     width: 100%;
@@ -103,23 +100,34 @@ export default {
   }
   .front {
     transform: rotateY(0deg);
+    @include createBackground(
+      darken($color: $red, $amount: 2),
+      darken($color: $red, $amount: 2),
+      "/images/textures/concrete-dark.jpg"
+    );
     .profile-background {
       border-radius: 8px 8px 0 0;
-      display: flex;
-      justify-content: center;
       height: calc(50% - 40px);
       width: 100%;
       background-size: cover;
       background-position: center;
-      img {
-        border: 2px solid $white;
-        border-radius: 50%;
-        height: 140px;
-        width: 140px;
-        margin-top: 20px;
-        box-shadow: 0 0 0 3px transparentize($color: $white, $amount: 0.75),
-          0 4px 5px transparentize($color: $red, $amount: 0.65),
-          0 0 25px 25px transparentize($color: $white, $amount: 0.8);
+      .profile-overlay {
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: center;
+        background-color: transparentize($color: $black, $amount: 0.55);
+        height: 100%;
+        width: 100%;
+        img {
+          border: 2px solid $white;
+          border-radius: 50%;
+          height: 140px;
+          width: 140px;
+          margin-top: 20px;
+          box-shadow: 0 0 0 3px transparentize($color: $white, $amount: 0.75),
+            0 4px 5px transparentize($color: $red, $amount: 0.65),
+            0 0 25px 25px transparentize($color: $white, $amount: 0.8);
+        }
       }
     }
     .titles {
@@ -152,9 +160,15 @@ export default {
   }
   .back {
     transform: rotateY(180deg);
+    background-position: center;
+    background-size: cover;
     p {
-      padding: 20px;
       color: $white;
+      height: calc(100% - 60px);
+      background-color: transparentize($color: $black, $amount: 0.55);
+      margin: 0px;
+      padding: 30px;
+      border-radius: 8px;
     }
   }
   &.flip .front {

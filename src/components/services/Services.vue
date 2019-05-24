@@ -6,7 +6,7 @@
         title="General Collision Repair"
         subtitle="subtitle"
         description="If you've been involved in an accident we're the shop for you."
-        image="/images/stock/1.jpg"
+        image="/images/services/collision-repair.jpg"
         imageAlignment="left"
       ></ServiceTile>
       <ServiceTile
@@ -20,7 +20,7 @@
         title="Paint"
         subtitle="subtitle"
         description="We have four skilled painters. All of which stay very busy."
-        image="/images/stock/3.jpg"
+        image="/images/services/paint.jpg"
         imageAlignment="left"
       ></ServiceTile>
       <ServiceTile
@@ -34,7 +34,7 @@
         title="Quality Control"
         subtitle="subtitle"
         description="We have a fully operational wash bay and full time quality control employees."
-        image="/images/stock/5.jpg"
+        image="/images/services/quality-control.jpg"
         imageAlignment="left"
       ></ServiceTile>
       <ServiceTile
