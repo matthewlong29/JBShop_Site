@@ -13,7 +13,7 @@
         title="Body Work"
         subtitle="subtitle"
         description="We have four body men who aren't afraid of anything. They can repair or replace any part necessary."
-        image="/images/stock/2.jpg"
+        image="/images/services/paint.jpg"
         imageAlignment="right"
       ></ServiceTile>
       <ServiceTile
@@ -27,7 +27,7 @@
         title="Free Estimates"
         subtitle="subtitle"
         description="Need an estimate, but not sure if you're going to get the car repaired? Come on by! They're free!"
-        image="/images/stock/4.jpg"
+        image="/images/services/paint.jpg"
         imageAlignment="right"
       ></ServiceTile>
       <ServiceTile
@@ -41,7 +41,7 @@
         title="We accept cash, check, and credit"
         subtitle="subtitle"
         description="In addition to cash and check, we accept credit (Visa and MasterCard)."
-        image="/images/stock/6.jpg"
+        image="/images/services/paint.jpg"
         imageAlignment="right"
       ></ServiceTile>
     </div>

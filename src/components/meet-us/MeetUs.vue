@@ -45,7 +45,7 @@
       <Profile
         class="member"
         profileImage="/images/team/cassie.jpg"
-        bgImage="/images/stock/6.jpg"
+        bgImage=""
         name="Cassie Long"
         jobTitle="Asst. Secretary"
         message="Cassie is the newest addition to the shop. Don't hold that against her though; she's sharp and always eager to help out. Cassie does all the odds and ins with getting your car looking back to how you want it!"
