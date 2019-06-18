@@ -37,7 +37,10 @@ import {
   faUserPlus,
   faUserMinus,
   faFileDownload,
-  faWrench
+  faWrench,
+  faPaintBrush,
+  faSprayCan,
+  faInbox
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -60,7 +63,10 @@ library.add(
   faUserPlus,
   faUserMinus,
   faFileDownload,
-  faWrench
+  faWrench,
+  faPaintBrush,
+  faSprayCan,
+  faInbox
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

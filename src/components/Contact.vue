@@ -64,4 +64,17 @@ section {
     }
   }
 }
+
+@media (max-width: 480px) {
+  section {
+    .contact-information {
+      flex-direction: column;
+      .address,
+      .hours-of-operation,
+      .phone {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
 </style>
