@@ -2,14 +2,15 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import * as VueGoogleMaps from "vue2-google-maps";
-import { googleMapsAPIKey } from "./config.js";
 import VueLazyload from 'vue-lazyload';
+// import { googleMapsAPIKey } from "./config.js";
+
 
 Vue.config.productionTip = false;
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: googleMapsAPIKey,
+    // key: googleMapsAPIKey,
     libraries: "places" // necessary for places input
   }
 });
