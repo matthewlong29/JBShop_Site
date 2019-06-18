@@ -19,7 +19,7 @@
       <ServiceTile
         title="Paint"
         subtitle="subtitle"
-        description="We have four skilled painters. All of which stay very busy."
+        description="We have three skilled painters. All of which stay very busy."
         image="/images/services/paint.jpg"
         imageAlignment="left"
       ></ServiceTile>
