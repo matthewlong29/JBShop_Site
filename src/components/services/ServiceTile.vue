@@ -7,7 +7,8 @@
     </div>
     <div
       class="service-image"
-      :style="{backgroundImage: `url(${image})`, borderRadius: '0 2px 2px 0'}"
+      :style="{borderRadius: '0 2px 2px 0'}"
+      v-lazy:background-image="image"
     >
       <div class="arrow-right"></div>
     </div>
@@ -15,7 +16,8 @@
   <div class="service-tile" v-else>
     <div
       class="service-image"
-      :style="{backgroundImage: `url(${image})`, borderRadius: '2px 0 0 2px'}"
+      :style="{borderRadius: '2px 0 0 2px'}"
+      v-lazy:background-image="image"
     >
       <div class="arrow-left"></div>
     </div>

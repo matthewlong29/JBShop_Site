@@ -19,7 +19,8 @@
         class="image"
         v-for="image in images"
         :key="image.id"
-        :style="{ flex: `0 0 ${imageWidth}px`, backgroundImage: `url(${image.url})`}"
+        :style="{ flex: `0 0 ${imageWidth}px`}"
+        v-lazy:background-image="image.url"
       >
         <div class="overlay-top"></div>
         <div class="overlay-bottom">
@@ -47,79 +48,79 @@ export default {
       imageWidth: null,
       images: [
         {
-          url: "/images/stock/1.jpg",
-          category: "Body Work",
-          message: "im some message for image 1"
+          url: "/images/gallery/washing-car.jpg",
+          category: "Washing Car",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/2.jpg",
-          category: "Quality Control",
-          message: "im some message for image 2"
+          url: "/images/gallery/taping-to-paint.jpg",
+          category: "Painting",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/3.jpg",
-          category: "Body Work",
-          message: "im some message for image 3"
+          url: "/images/gallery/shop-work-area.jpg",
+          category: "Building",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/4.jpg",
-          category: "Body Work",
-          message: "im some message for image 4"
-        },
-        {
-          url: "/images/stock/5.jpg",
-          category: "Body Work",
-          message: "im some message for image 5"
-        },
-        {
-          url: "/images/stock/6.jpg",
+          url: "/images/gallery/painting-technique.jpg",
           category: "Paint",
-          message: "im some message for image 6"
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/7.jpg",
-          category: "Quality Control",
-          message: "im some message for image 7"
+          url: "/images/gallery/shop-body-building.jpg",
+          category: "Building",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/8.jpg",
-          category: "Quality Control",
-          message: "im some message for image 8"
+          url: "/images/gallery/shop-back-lot.jpg",
+          category: "Building",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/9.jpg",
-          category: "Quality Control",
-          message: "im some message for image 9"
+          url: "/images/gallery/paint-booth.jpg",
+          category: "Paint",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/10.jpg",
-          category: "Quality Control",
-          message: "im some message for image 10"
+          url: "/images/gallery/shop-garages.jpg",
+          category: "Building",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/11.jpg",
-          category: "Quality Control",
-          message: "im some message for image 11"
+          url: "/images/gallery/general-repair.jpg",
+          category: "General Collision Repair",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/12.jpg",
-          category: "Body Work",
-          message: "im some message for image 12"
+          url: "/images/gallery/shop-main-building.jpg",
+          category: "Building",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/13.jpg",
-          category: "Quality Control",
-          message: "im some message for image 13"
+          url: "/images/gallery/project-one-before.jpg",
+          category: "Project One",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/14.jpg",
-          category: "Quality Control",
-          message: "im some message for image 14"
+          url: "/images/gallery/project-one-after.jpg",
+          category: "Project One",
+          message: "im some message for image"
         },
         {
-          url: "/images/stock/15.jpg",
-          category: "Quality Control",
-          message: "im some message for image 15"
+          url: "/images/gallery/project-two-before.jpg",
+          category: "Project Two",
+          message: "im some message for image"
+        },
+        {
+          url: "/images/gallery/project-two-after.jpg",
+          category: "Project Two",
+          message: "im some message for image"
+        },
+        {
+          url: "/images/gallery/shop-building-title.jpg",
+          category: "Building",
+          message: "im some message for image"
         }
       ]
     };

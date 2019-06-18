@@ -28,14 +28,14 @@ export default {
       timer: setInterval(this.countdown, 1000),
       progressPercentage: 100,
       messages: [
-        ["The best car repair service in your area!", "Since 1970?"],
+        ["The best car repair service in your area!", "Since 1984!"],
         ["Something else about car repair!", "We repair with love."],
         ["Walk-ins always welcome!", "Or call now at (502) 695-4477"]
       ],
       images: [
-        "/images/banner.jpg",
-        "/images/meetUsHeader.jpg",
-        "/images/services.jpg"
+        "/images/banner/main-building-front-lot.jpg",
+        "/images/banner/both-buildings.jpg",
+        "/images/banner/garage-main-building.jpg"
       ],
       counter: 0
     };

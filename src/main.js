@@ -2,7 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import * as VueGoogleMaps from "vue2-google-maps";
+import VueLazyload from 'vue-lazyload';
 // import { googleMapsAPIKey } from "./config.js";
+
 
 Vue.config.productionTip = false;
 
@@ -12,6 +14,8 @@ Vue.use(VueGoogleMaps, {
     libraries: "places" // necessary for places input
   }
 });
+
+Vue.use(VueLazyload);
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {

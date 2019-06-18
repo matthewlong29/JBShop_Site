@@ -32,9 +32,11 @@ a {
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px 0 2px darken($color: $white, $amount: 10);
+    transition: box-shadow 0.15s ease;
     .button-icon-container {
       box-shadow: -2px 2px 0 2px darken($color: $red, $amount: 1);
       border-radius: 2px 0 0 2px;
+      transition: box-shadow 0.15s ease;
       svg {
         padding: 12px;
         height: 22px;
@@ -50,6 +52,7 @@ a {
       align-items: flex-start;
       padding: 0 1rem;
       margin: auto 0;
+      transition: box-shadow 0.15s ease;
       span {
         &:first-of-type {
           color: $black;
