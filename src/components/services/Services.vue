@@ -1,6 +1,6 @@
 <template>
   <section>
-    <TitleAndSubtitle title="Why choose us?" subtitle="Family owned and operated since 1855."></TitleAndSubtitle>
+    <TitleAndSubtitle title="Why choose us?" subtitle="Family owned and operated since 1984."></TitleAndSubtitle>
     <div class="tiles-container">
       <ServiceTile
         title="General Collision Repair"
