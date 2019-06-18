@@ -176,4 +176,19 @@ section {
     }
   }
 }
+
+@media (max-width: 480px) {
+  section {
+    .slider-content-container {
+      .messages-container {
+        h1 {
+          font-size: 1.15rem;
+        }
+        h2 {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}
 </style>
