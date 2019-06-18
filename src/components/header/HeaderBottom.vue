@@ -1,19 +1,19 @@
 <template>
   <nav>
     <ul>
-      <router-link to="#home">
+      <router-link to="/#home">
         <li>Home</li>
       </router-link>
-      <router-link to="#about">
+      <router-link to="/#about">
         <li>About</li>
       </router-link>
-      <router-link to="#team">
+      <router-link to="/#team">
         <li>Our Team</li>
       </router-link>
-      <router-link to="#jobs">
+      <router-link to="/#jobs">
         <li>Jobs</li>
       </router-link>
-      <router-link to="#contact">
+      <router-link to="/#contact">
         <li>Contact</li>
       </router-link>
     </ul>

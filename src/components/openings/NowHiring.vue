@@ -5,19 +5,16 @@
         title="Join Our Team!"
         subtitle="If you think you'd be a good fit, or see an open position below that you're interested in, fill out an application and call now to schedule an interview!"
       ></TitleAndSubtitle>
-      <Button
-        link="http://www.google.com"
-        icon="file-download"
-        topText="Download"
-        bottomText="Application"
-      ></Button>
+      <router-link to="/apply">
+        <Button icon="inbox" topText="Apply" bottomText="Now"></Button>
+      </router-link>
     </div>
     <Opening
-      icon="wrench"
-      jobTitle="Body Technician"
-      areaOfWork="Body"
-      datePosted="04/18/19"
-      jobDescription="Something about this job.. make it sound good"
+      icon="spray-can"
+      jobTitle="Automotive Painter"
+      areaOfWork="Paint"
+      datePosted="06/18/19"
+      jobDescription="We have an immediate opening for an automotive painter. You will be responsible for operating painting equipment (e.g. paint gun, sanders, and buffers). Give us a call today if you think you have what it takes! To apply now, fill out the application above."
     ></Opening>
   </section>
 </template>
@@ -50,5 +47,9 @@ section {
       max-width: 80%;
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
 </style>
