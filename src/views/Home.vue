@@ -7,7 +7,7 @@
     <NowHiring id="jobs"></NowHiring>
     <ImageGallerySlider id="image-gallery"></ImageGallerySlider>
     <Contact id="contact"></Contact>
-    <GoogleMaps id="google-maps"></GoogleMaps>
+    <!-- <GoogleMaps id="google-maps"></GoogleMaps> -->
     <Footer id="footer"></Footer>
   </main>
 </template>
@@ -18,7 +18,7 @@ import Services from "@/components/services/Services";
 import NowHiring from "@/components/openings/NowHiring";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
-import GoogleMaps from "@/components/GoogleMaps";
+// import GoogleMaps from "@/components/GoogleMaps";
 import ImageGallerySlider from "@/components/ImageGallerySlider";
 import MeetUs from "@/components/meet-us/MeetUs";
 import Contact from "@/components/Contact";
@@ -30,7 +30,7 @@ export default {
     Services,
     CallToAction,
     Footer,
-    GoogleMaps,
+    // GoogleMaps,
     ImageGallerySlider,
     MeetUs,
     Contact,
