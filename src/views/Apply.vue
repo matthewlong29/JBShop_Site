@@ -1,47 +1,38 @@
 <template>
-  <form name="contact" method="post" netlify action="/">
-    <p>
-      <label>
-        Your Name:
-        <input type="text" name="name">
-      </label>
-    </p>
-    <p>
-      <label>
-        Your Email:
-        <input type="email" name="email">
-      </label>
-    </p>
-    <p>
-      <label>
-        Your Role:
-        <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select>
-      </label>
-    </p>
-    <p>
-      <label>
-        Message:
-        <textarea name="message"></textarea>
-      </label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+  <form
+    name="ask-question"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    >
+    <input type="hidden" name="form-name" value="ask-question" />
+    <label v-for="(panelist, index) in panelists" :key="index">
+      <input
+        type="radio"
+        name="panelist"
+        :value="panelist"
+        @input="ev => updatePanelist"
+        :checked="panelist === currentPanelist"
+      />
+      <span>{{ panelist }}</span>
+    </label>
+    ...
+    <button>Submit</button>
   </form>
 </template>
-
 <script>
-export default {};
-</script>
-
-<style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
-
-section {
-  @extend %container;
+export default {
+  name: "QAForm",
+  methods: {
+    updatePanelist (ev) {
+      this.currentPanelist = ev.target.value
+    }
+  },
+  data () {
+    return {
+      panelists: ['Evan You', 'Chris Fritz'],
+      currentPanelist: 'Evan You'
+    }
+  }
 }
-</style>
+</script>
