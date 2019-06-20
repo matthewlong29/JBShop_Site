@@ -21,26 +21,14 @@ export default new Router({
       component: Apply
     },
     {
-      path: '/thanks',
-      name: 'success',
+      path: "/thanks",
+      name: "success",
       component: SubmissionSuccess
     },
     {
-      path: '/404',
-      name: 'fail',
+      path: "/404",
+      name: "fail",
       component: SubmissionFail
     }
-  ],
-  scrollBehavior(to, from, savedPosition) {
-    console.log(to, from);
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
-    if (to.hash) {
-      return {
-        selector: to.hash,
-        offset: { x: 0, y: 172 }
-      };
-    }
-  }
+  ]
 });
