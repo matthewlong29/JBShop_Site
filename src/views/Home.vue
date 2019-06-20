@@ -21,7 +21,6 @@
       <button>Submit</button>
     </form>
     <ImageGallerySlider id="image-gallery"></ImageGallerySlider>
-    <Contact id="contact"></Contact>
     <!-- <GoogleMaps id="google-maps"></GoogleMaps> -->
     <Footer id="footer"></Footer>
   </main>
@@ -36,7 +35,6 @@ import Footer from "@/components/Footer";
 // import GoogleMaps from "@/components/GoogleMaps";
 import ImageGallerySlider from "@/components/ImageGallerySlider";
 import MeetUs from "@/components/meet-us/MeetUs";
-import Contact from "@/components/Contact";
 
 export default {
   name: "home",
@@ -48,7 +46,6 @@ export default {
     // GoogleMaps,
     ImageGallerySlider,
     MeetUs,
-    Contact,
     NowHiring
   },
   methods: {
