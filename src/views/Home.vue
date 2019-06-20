@@ -32,17 +32,6 @@ export default {
     ImageGallerySlider,
     MeetUs,
     NowHiring
-  },
-  methods: {
-    updatePanelist(ev) {
-      this.currentPanelist = ev.target.value;
-    }
-  },
-  data() {
-    return {
-      panelists: ["Evan You", "Chris Fritz"],
-      currentPanelist: "Evan You"
-    };
   }
 };
 </script>
