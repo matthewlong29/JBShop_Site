@@ -5,21 +5,6 @@
     <CallToAction id="call-to-action"></CallToAction>
     <MeetUs id="team"></MeetUs>
     <NowHiring id="jobs"></NowHiring>
-    <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="ask-question">
-      <label v-for="(panelist, index) in panelists" :key="index">
-        <input
-          type="radio"
-          name="panelist"
-          :value="panelist"
-          @input="ev => updatePanelist"
-          :checked="panelist === currentPanelist"
-        >
-        <span>{{ panelist }}</span>
-      </label>
-      ...
-      <button>Submit</button>
-    </form>
     <ImageGallerySlider id="image-gallery"></ImageGallerySlider>
     <!-- <GoogleMaps id="google-maps"></GoogleMaps> -->
     <Footer id="footer"></Footer>
