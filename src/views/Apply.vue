@@ -8,7 +8,7 @@
   >
     <input type="hidden" name="form-name" value="contact">
 
-    <h2>Applicant Information</h2>
+    <h1>Applicant Information</h1>
     <!-- first name -->
     <label for="first-name">First Name</label>
     <input type="text" name="first-name" id="first-name">
@@ -31,50 +31,82 @@
 
     <!-- citizenship -->
     <h3>Citizenship</h3>
-    <label for="us-citizen">US Citizen</label>
-    <input type="radio" name="citizenship" value="US Citizen" id="us-citizen">
-    <label for="foreign-national">Foreign National</label>
-    <input type="radio" name="citizenship" value="Foreign National" id="foreign-national">
-
+    <div class="radio">
+      <input type="radio" name="citizenship" value="US Citizen" id="us-citizen">
+      <label for="us-citizen">US Citizen</label>
+    </div>
+    <div class="radio">
+      <input type="radio" name="citizenship" value="Foreign National" id="foreign-national">
+      <label for="foreign-national">Foreign National</label>
+    </div>
     <!-- authorized to work -->
     <h3>Authorized to work in the USA?</h3>
-    <label for="authorized-to-work">Yes</label>
-    <input type="radio" name="citizenship" value="Yes" id="authorized-to-work">
-    <label for="not-authorized-to-work">No</label>
-    <input type="radio" name="citizenship" value="No" id="not-authorized-to-work">
 
+    <div class="radio">
+      <input type="radio" name="authorized-to-work" value="Yes" id="authorized-to-work">
+      <label for="authorized-to-work">Yes</label>
+    </div>
+    <div class="radio">
+      <input type="radio" name="authorized-to-work" value="No" id="not-authorized-to-work">
+      <label for="not-authorized-to-work">No</label>
+    </div>
     <!-- convicted of a felony -->
     <h3>Have you ever been convicted of a felony?</h3>
-    <label for="convicted-of-a-felony">Yes</label>
-    <input type="radio" name="citizenship" value="Yes" id="convicted-of-a-felony">
-    <label for="not-convicted-of-a-felony">No</label>
-    <input type="radio" name="citizenship" value="No" id="not-convicted-of-a-felony">
-
+    <div class="radio">
+      <input type="radio" name="convicted-of-a-felony" value="Yes" id="convicted-of-a-felony">
+      <label for="convicted-of-a-felony">Yes</label>
+    </div>
+    <div class="radio">
+      <input type="radio" name="convicted-of-a-felony" value="No" id="not-convicted-of-a-felony">
+      <label for="not-convicted-of-a-felony">No</label>
+    </div>
     <!-- convicted of a felony -->
     <h3>Have you ever worked for jb-long-and-son-body-shop?</h3>
-    <label for="worked-for-jb-long-and-son-body-shop">Yes</label>
-    <input type="radio" name="citizenship" value="Yes" id="worked-for-jb-long-and-son-body-shop">
-    <label for="not-worked-for-jb-long-and-son-body-shop">No</label>
-    <input type="radio" name="citizenship" value="No" id="not-worked-for-jb-long-and-son-body-shop">
-
+    <div class="radio">
+      <input
+        type="radio"
+        name="worked-for-jb-long"
+        value="Yes"
+        id="worked-for-jb-long-and-son-body-shop"
+      >
+      <label for="worked-for-jb-long-and-son-body-shop">Yes</label>
+    </div>
+    <div class="radio">
+      <input
+        type="radio"
+        name="worked-for-jb-long"
+        value="No"
+        id="not-worked-for-jb-long-and-son-body-shop"
+      >
+      <label for="not-worked-for-jb-long-and-son-body-shop">No</label>
+    </div>
+    <div class="separator"></div>
     <h2>Education</h2>
+
     <!-- highschool -->
     <label for="high-school">High School</label>
     <input type="text" name="high-school" id="high-school">
 
     <!-- did you graduate -->
     <h3>Did you graduate from high school?</h3>
-    <label for="graduated">Yes</label>
-    <input type="radio" name="citizenship" value="Yes" id="graduated">
-    <label for="not-graduated">No</label>
-    <input type="radio" name="citizenship" value="No" id="not-graduated">
 
+    <div class="radio">
+      <input type="radio" name="high-school" value="Yes" id="graduated">
+      <label for="graduated">Yes</label>
+    </div>
+    <div class="radio">
+      <input type="radio" name="high-school" value="No" id="not-graduated">
+      <label for="not-graduated">No</label>
+    </div>
     <h3>Other Education</h3>
     <!-- highschool -->
     <label for="other-education">Other Education</label>
     <input type="text" name="other-education" id="other-education">
 
-    <h2>Reference</h2>
+    <div class="separator"></div>
+    <h2>References</h2>
+
+    <h3>Reference One</h3>
     <!-- reference one first name -->
     <label for="reference-one-first-name">Reference First Name</label>
     <input type="text" name="reference-one-first-name" id="reference-one-first-name">
@@ -95,7 +127,7 @@
     <label for="reference-one-address">Reference Address</label>
     <input type="text" name="reference-one-address" id="reference-one-address">
 
-    <h2>Reference</h2>
+    <h3>Reference Two</h3>
 
     <!-- reference two first name -->
     <label for="reference-two-first-name">Reference First Name</label>
@@ -117,7 +149,7 @@
     <label for="reference-two-address">Reference Address</label>
     <input type="text" name="reference-two-address" id="reference-two-address">
 
-    <h2>Reference</h2>
+    <h3>Reference Three</h3>
 
     <!-- reference three first name -->
     <label for="reference-three-first-name">Reference First Name</label>
@@ -139,7 +171,10 @@
     <label for="reference-three-address">Reference Address</label>
     <input type="text" name="reference-three-address" id="reference-three-address">
 
+    <div class="separator"></div>
     <h2>Previous Employment</h2>
+
+    <h3>Employment One</h3>
     <!-- employment one company -->
     <label for="employment-one-company">Company</label>
     <input type="text" name="employment-one-company" id="employment-one-company">
@@ -173,22 +208,28 @@
     >
 
     <h3>May we contact your previous supervisor for a reference?</h3>
-    <label for="contact-previous-supervisor-one">Yes</label>
-    <input
-      type="radio"
-      name="employment-one-contact"
-      value="Yes"
-      id="contact-previous-supervisor-one"
-    >
-    <label for="not-contact-previous-supervisor-one">No</label>
-    <input
-      type="radio"
-      name="employment-one-contact"
-      value="No"
-      id="not-contact-previous-supervisor-one"
-    >
 
-    <h2>Previous Employment</h2>
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-one-contact"
+        value="Yes"
+        id="contact-previous-supervisor-one"
+      >
+      <label for="contact-previous-supervisor-one">Yes</label>
+    </div>
+
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-one-contact"
+        value="No"
+        id="not-contact-previous-supervisor-one"
+      >
+      <label for="not-contact-previous-supervisor-one">No</label>
+    </div>
+
+    <h3>Employment Two</h3>
     <!-- employment two company -->
     <label for="employment-two-company">Company</label>
     <input type="text" name="employment-two-company" id="employment-two-company">
@@ -222,22 +263,26 @@
     >
 
     <h3>May we contact your previous supervisor for a reference?</h3>
-    <label for="contact-previous-supervisor-one">Yes</label>
-    <input
-      type="radio"
-      name="employment-two-contact"
-      value="Yes"
-      id="contact-previous-supervisor-one"
-    >
-    <label for="not-contact-previous-supervisor-one">No</label>
-    <input
-      type="radio"
-      name="employment-two-contact"
-      value="No"
-      id="not-contact-previous-supervisor-one"
-    >
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-two-contact"
+        value="Yes"
+        id="contact-previous-supervisor-one"
+      >
+      <label for="contact-previous-supervisor-one">Yes</label>
+    </div>
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-two-contact"
+        value="No"
+        id="not-contact-previous-supervisor-one"
+      >
+      <label for="not-contact-previous-supervisor-one">No</label>
+    </div>
 
-    <h2>Previous Employment</h2>
+    <h3>Employment Three</h3>
     <!-- employment three company -->
     <label for="employment-three-company">Company</label>
     <input type="text" name="employment-three-company" id="employment-three-company">
@@ -275,21 +320,25 @@
     >
 
     <h3>May we contact your previous supervisor for a reference?</h3>
-    <label for="contact-previous-supervisor-one">Yes</label>
-    <input
-      type="radio"
-      name="employment-three-contact"
-      value="Yes"
-      id="contact-previous-supervisor-one"
-    >
-    <label for="not-contact-previous-supervisor-one">No</label>
-    <input
-      type="radio"
-      name="employment-three-contact"
-      value="No"
-      id="not-contact-previous-supervisor-one"
-    >
-
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-three-contact"
+        value="Yes"
+        id="contact-previous-supervisor-one"
+      >
+      <label for="contact-previous-supervisor-one">Yes</label>
+    </div>
+    <div class="radio">
+      <input
+        type="radio"
+        name="employment-three-contact"
+        value="No"
+        id="not-contact-previous-supervisor-one"
+      >
+      <label for="not-contact-previous-supervisor-one">No</label>
+    </div>
+    <div class="separator"></div>
     <h2>Disclaimer and Signature</h2>
     <p>I certify that my answers are true and complete to the best of my knowledge. If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release.</p>
 
@@ -319,7 +368,48 @@ export default {
 @import "../styles/scss/variables";
 @import "../styles/scss/placeholders";
 
-input {
-  display: block;
+form {
+  @extend %container;
+  h1 {
+    padding-top: 1.5rem;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  input[type="text"],
+  input[type="email"] {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  input[type="submit"] {
+    margin-bottom: 2rem;
+  }
+  div {
+    &.radio {
+      display: block;
+    }
+    &.separator {
+      margin-top: 1.5rem;
+      height: 3px;
+      width: 100%;
+      background: repeating-linear-gradient(
+        -37deg,
+        lighten($color: $blue, $amount: 34),
+        lighten($color: $blue, $amount: 34) 51px,
+        lighten($color: $blue, $amount: 57) 51px,
+        lighten($color: $blue, $amount: 57) 97px
+      );
+    }
+  }
 }
 </style>
