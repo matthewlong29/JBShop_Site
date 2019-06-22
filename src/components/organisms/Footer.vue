@@ -108,8 +108,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
+@import "../../styles/scss/variables";
+@import "../../styles/scss/placeholders";
 
 footer {
   @include createBackground(

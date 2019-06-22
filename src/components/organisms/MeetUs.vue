@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
-import Profile from "@/components/meet-us/Profile";
+import TitleAndSubtitle from "@/components/atoms/TitleAndSubtitle";
+import Profile from "@/components/molecules/Profile";
 
 export default {
   name: "MeetUs",
@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/scss/variables";
 @import "../../styles/scss/placeholders";
 
 section {

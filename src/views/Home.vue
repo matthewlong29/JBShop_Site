@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import MainSlider from "@/components/MainSlider";
-import Services from "@/components/services/Services";
-import NowHiring from "@/components/openings/NowHiring";
-import CallToAction from "@/components/CallToAction";
-import Footer from "@/components/Footer";
-import GoogleMaps from "@/components/GoogleMaps";
-import ImageGallerySlider from "@/components/ImageGallerySlider";
-import MeetUs from "@/components/meet-us/MeetUs";
+import MainSlider from "@/components/organisms/MainSlider";
+import Services from "@/components/organisms/Services";
+import NowHiring from "@/components/organisms/NowHiring";
+import CallToAction from "@/components/organisms/CallToAction";
+import Footer from "@/components/organisms/Footer";
+import GoogleMaps from "@/components/organisms/GoogleMaps";
+import ImageGallerySlider from "@/components/organisms/ImageGallerySlider";
+import MeetUs from "@/components/organisms/MeetUs";
 
 export default {
   name: "home",

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Button from "@/components/partials/Button";
+import Button from "@/components/atoms/Button";
 
 export default {
   name: "CallToAction",
@@ -45,8 +45,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
+@import "../../styles/scss/variables";
+@import "../../styles/scss/placeholders";
 
 * {
   transition: all ease-in-out 0.15s;
@@ -63,7 +63,6 @@ export default {
     justify-content: center;
     align-items: flex-start;
     padding: 1rem 5rem;
-    // width: calc(200% / 3);
     min-height: 300px;
     background: repeating-linear-gradient(
       -55deg,
