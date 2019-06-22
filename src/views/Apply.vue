@@ -1,35 +1,44 @@
 <template>
   <form
-    name="application"
-    action="/"
+    name="job-application"
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
+    @submit.prevent="handleSubmit()"
   >
-    <input type="hidden" name="form-name" value="application">
+    <input type="hidden" name="form-name" value="job-application">
 
     <h1>Applicant Information</h1>
-    <!-- first name -->
-    <label for="first-name">First Name</label>
-    <input type="text" name="first-name" id="first-name">
 
-    <!-- last name -->
-    <label for="last-name">Last Name</label>
-    <input type="text" name="last-name" id="last-name">
+    <label>
+      First Name
+      <input type="text" name="firstName" @input="ev => form.firstName = ev.target.value">
+    </label>
 
-    <!-- address -->
-    <label for="address">Address</label>
-    <input type="text" name="address" id="address">
+    <label>
+      Last Name
+      <input type="text" name="lastName" @input="ev => form.lastName = ev.target.value">
+    </label>
 
-    <!-- email -->
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <label>
+      Address
+      <input type="text" name="address" @input="ev => form.address = ev.target.value">
+    </label>
 
-    <!-- phone number -->
-    <label for="phone-number">Phone Number</label>
-    <input type="text" name="phone-number" id="phone-number">
+    <label>
+      Email
+      <input type="email" name="email" @input="ev => form.email = ev.target.value">
+    </label>
 
-    <!-- citizenship -->
+    <label>
+      Phone Number
+      <input
+        type="text"
+        name="phoneNumber"
+        @input="ev => form.phoneNumber = ev.target.value"
+      >
+    </label>
+
     <h3>Citizenship</h3>
     <div class="radio">
       <input type="radio" name="citizenship" value="US Citizen" id="us-citizen">
@@ -39,180 +48,239 @@
       <input type="radio" name="citizenship" value="Foreign National" id="foreign-national">
       <label for="foreign-national">Foreign National</label>
     </div>
-    <!-- authorized to work -->
-    <h3>Authorized to work in the USA?</h3>
 
+    <h3>Authorized to work in the USA?</h3>
     <div class="radio">
-      <input type="radio" name="authorized-to-work" value="Yes" id="authorized-to-work">
-      <label for="authorized-to-work">Yes</label>
+      <input type="radio" name="authorizedToWork" value="Yes" id="authorizedToWork">
+      <label for="authorizedToWork">Yes</label>
     </div>
     <div class="radio">
-      <input type="radio" name="authorized-to-work" value="No" id="not-authorized-to-work">
-      <label for="not-authorized-to-work">No</label>
+      <input type="radio" name="authorizedToWork" value="No" id="notAuthorizedToWork">
+      <label for="notAuthorizedToWork">No</label>
     </div>
-    <!-- convicted of a felony -->
+
     <h3>Have you ever been convicted of a felony?</h3>
     <div class="radio">
-      <input type="radio" name="convicted-of-a-felony" value="Yes" id="convicted-of-a-felony">
-      <label for="convicted-of-a-felony">Yes</label>
+      <input type="radio" name="convictedOfAFelony" value="Yes" id="convictedOfAFelony">
+      <label for="convictedOfAFelony">Yes</label>
     </div>
     <div class="radio">
-      <input type="radio" name="convicted-of-a-felony" value="No" id="not-convicted-of-a-felony">
-      <label for="not-convicted-of-a-felony">No</label>
+      <input type="radio" name="convictedOfAFelony" value="No" id="notConvictedOfAFelony">
+      <label for="notConvictedOfAFelony">No</label>
     </div>
-    <!-- convicted of a felony -->
+
     <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
     <div class="radio">
-      <input
-        type="radio"
-        name="worked-for-jb-long"
-        value="Yes"
-        id="worked-for-jb-long-and-son-body-shop"
-      >
-      <label for="worked-for-jb-long-and-son-body-shop">Yes</label>
+      <input type="radio" name="workedForJBLong" value="Yes" id="workedForJBLong">
+      <label for="workedForJBLong">Yes</label>
     </div>
     <div class="radio">
-      <input
-        type="radio"
-        name="worked-for-jb-long"
-        value="No"
-        id="not-worked-for-jb-long-and-son-body-shop"
-      >
-      <label for="not-worked-for-jb-long-and-son-body-shop">No</label>
+      <input type="radio" name="workedForJBLong" value="No" id="notWorkedForJBLong">
+      <label for="notWorkedForJBLong">No</label>
     </div>
+
     <div class="separator"></div>
     <h2>Education</h2>
 
-    <!-- highschool -->
-    <label for="high-school">High School</label>
-    <input type="text" name="high-school" id="high-school">
+    <label>
+      High School
+      <input
+        type="text"
+        name="highSchool"
+        @input="ev => form.highSchool = ev.target.value"
+      >
+    </label>
 
-    <!-- did you graduate -->
     <h3>Did you graduate from high school?</h3>
-
     <div class="radio">
-      <input type="radio" name="high-school" value="Yes" id="graduated">
+      <input type="radio" name="highSchool" value="Yes" id="graduated">
       <label for="graduated">Yes</label>
     </div>
     <div class="radio">
-      <input type="radio" name="high-school" value="No" id="not-graduated">
+      <input type="radio" name="highSchool" value="No" id="not-graduated">
       <label for="not-graduated">No</label>
     </div>
-    <h3>Other Education</h3>
-    <!-- highschool -->
-    <label for="other-education">Other Education</label>
-    <input type="text" name="other-education" id="other-education">
+
+    <label>
+      Other Education
+      <input
+        type="text"
+        name="otherEducation"
+        @input="ev => form.otherEducation = ev.target.value"
+      >
+    </label>
 
     <div class="separator"></div>
     <h2>References</h2>
 
     <h3>Reference One</h3>
-    <!-- reference one first name -->
-    <label for="reference-one-first-name">Reference First Name</label>
-    <input type="text" name="reference-one-first-name" id="reference-one-first-name">
 
-    <!-- reference one last name -->
-    <label for="reference-one-last-name">Reference Last Name</label>
-    <input type="text" name="reference-one-last-name" id="reference-one-last-name">
+    <label>
+      Reference First Name
+      <input
+        type="text"
+        name="referenceOneFirstName"
+        @input="ev => form.referenceOneFirstName = ev.target.value"
+      >
+    </label>
 
-    <!-- reference one relationship -->
-    <label for="reference-one-relationship">Reference Relationship</label>
-    <input type="text" name="reference-one-relationship" id="reference-one-relationship">
+    <label>
+      Reference Last Name
+      <input
+        type="text"
+        name="referenceOneLastName"
+        @input="ev => form.referenceOneLastName = ev.target.value"
+      >
+    </label>
 
-    <!-- reference one phone number -->
-    <label for="reference-one-phone-number">Reference Phone Number</label>
-    <input type="text" name="reference-one-phone-number" id="reference-one-phone-number">
+    <label>
+      Reference Relationship
+      <input
+        type="text"
+        name="referenceOneRelationship"
+        @input="ev => form.referenceOneRelationship = ev.target.value"
+      >
+    </label>
 
-    <!-- reference one address -->
-    <label for="reference-one-address">Reference Address</label>
-    <input type="text" name="reference-one-address" id="reference-one-address">
+    <label>
+      Reference Phone Number
+      <input
+        type="text"
+        name="referenceOnePhoneNumber"
+        @input="ev => form.referenceOnePhoneNumber = ev.target.value"
+      >
+    </label>
+
+    <label>
+      Reference Address
+      <input
+        type="text"
+        name="referenceOneAddress"
+        @input="ev => form.referenceOneAddress = ev.target.value"
+      >
+    </label>
 
     <h3>Reference Two</h3>
 
-    <!-- reference two first name -->
-    <label for="reference-two-first-name">Reference First Name</label>
-    <input type="text" name="reference-two-first-name" id="reference-two-first-name">
+    <label>
+      Reference First Name
+      <input
+        type="text"
+        name="referenceTwoFirstName"
+        @input="ev => form.referenceTwoFirstName = ev.target.value"
+      >
+    </label>
 
-    <!-- reference two last name -->
-    <label for="reference-two-last-name">Reference Last Name</label>
-    <input type="text" name="reference-two-last-name" id="reference-two-last-name">
+    <label>
+      Reference Last Name
+      <input
+        type="text"
+        name="referenceTwoLastName"
+        @input="ev => form.referenceTwoLastName = ev.target.value"
+      >
+    </label>
 
-    <!-- reference two relationship -->
-    <label for="reference-two-relationship">Reference Relationship</label>
-    <input type="text" name="reference-two-relationship" id="reference-two-relationship">
+    <label>
+      Reference Relationship
+      <input
+        type="text"
+        name="referenceTwoRelationship"
+        @input="ev => form.referenceTwoRelationship = ev.target.value"
+      >
+    </label>
 
-    <!-- reference two phone number -->
-    <label for="reference-two-phone-number">Reference Phone Number</label>
-    <input type="text" name="reference-two-phone-number" id="reference-two-phone-number">
+    <label>
+      Reference Phone Number
+      <input
+        type="text"
+        name="referenceTwoPhoneNumber"
+        @input="ev => form.referenceTwoPhoneNumber = ev.target.value"
+      >
+    </label>
 
-    <!-- reference two address -->
-    <label for="reference-two-address">Reference Address</label>
-    <input type="text" name="reference-two-address" id="reference-two-address">
-
-    <h3>Reference Three</h3>
-
-    <!-- reference three first name -->
-    <label for="reference-three-first-name">Reference First Name</label>
-    <input type="text" name="reference-three-first-name" id="reference-three-first-name">
-
-    <!-- reference three last name -->
-    <label for="reference-three-last-name">Reference Last Name</label>
-    <input type="text" name="reference-three-last-name" id="reference-three-last-name">
-
-    <!-- reference three relationship -->
-    <label for="reference-three-relationship">Reference Relationship</label>
-    <input type="text" name="reference-three-relationship" id="reference-three-relationship">
-
-    <!-- reference three phone number -->
-    <label for="reference-three-phone-number">Reference Phone Number</label>
-    <input type="text" name="reference-three-phone-number" id="reference-three-phone-number">
-
-    <!-- reference three address -->
-    <label for="reference-three-address">Reference Address</label>
-    <input type="text" name="reference-three-address" id="reference-three-address">
+    <label>
+      Reference Address
+      <input
+        type="text"
+        name="referenceTwoAddress"
+        @input="ev => form.referenceTwoAddress = ev.target.value"
+      >
+    </label>
 
     <div class="separator"></div>
     <h2>Previous Employment</h2>
 
     <h3>Employment One</h3>
-    <!-- employment one company -->
-    <label for="employment-one-company">Company</label>
-    <input type="text" name="employment-one-company" id="employment-one-company">
 
-    <!-- employment one address -->
-    <label for="employment-one-address">Address</label>
-    <input type="text" name="employment-one-address" id="employment-one-address">
+    <label>
+      Company
+      <input
+        type="text"
+        name="employmentOneCompany"
+        @input="ev => form.employmentOneCompany = ev.target.value"
+      >
+    </label>
 
-    <!-- employment one phone number -->
-    <label for="employment-one-phone-number">Phone Number</label>
-    <input type="text" name="employment-one-phone-number" id="employment-one-phone-number">
+    <label>
+      Address
+      <input
+        type="text"
+        name="employmentOneAddress"
+        @input="ev => form.employmentOneAddress = ev.target.value"
+      >
+    </label>
 
-    <!-- employment one supervisor -->
-    <label for="employment-one-supervisor">Supervisor Name</label>
-    <input type="text" name="employment-one-supervisor" id="employment-one-supervisor">
+    <label>
+      Phone Number
+      <input
+        type="text"
+        name="employmentOnePhoneNumber"
+        @input="ev => form.employmentOnePhoneNumber = ev.target.value"
+      >
+    </label>
 
-    <!-- employment one job title -->
-    <label for="employment-one-job-title">Job Title</label>
-    <input type="text" name="employment-one-job-title" id="employment-one-job-title">
+    <label>
+      Supervisor Name
+      <input
+        type="text"
+        name="employmentOneSupervisor"
+        @input="ev => form.employmentOneSupervisor = ev.target.value"
+      >
+    </label>
 
-    <!-- employment one responsibilities -->
-    <label for="employment-one-responsibilities">Responsibilities</label>
-    <input type="text" name="employment-one-responsibilities" id="employment-one-responsibilities">
+    <label>
+      Job Title
+      <input
+        type="text"
+        name="employmentOneJobTitle"
+        @input="ev => form.employmentOneJobTitle = ev.target.value"
+      >
+    </label>
 
-    <!-- employment one reason for leaving -->
-    <label for="employment-one-reason-for-leaving">Reason For Leaving</label>
-    <input
-      type="text"
-      name="employment-one-reason-for-leaving"
-      id="employment-one-reason-for-leaving"
-    >
+    <label>
+      Responsibilities
+      <input
+        type="text"
+        name="employmentOneResponsibilities"
+        @input="ev => form.employmentOneResponsibilities = ev.target.value"
+      >
+    </label>
+
+    <label>
+      Reason For Leaving
+      <input
+        type="text"
+        name="employmentOneReasonForLeaving"
+        @input="ev => form.employmentOneReasonForLeaving = ev.target.value"
+      >
+    </label>
 
     <h3>May we contact your previous supervisor for a reference?</h3>
 
     <div class="radio">
       <input
         type="radio"
-        name="employment-one-contact"
+        name="employmentOneContact"
         value="Yes"
         id="contact-previous-supervisor-one"
       >
@@ -222,7 +290,7 @@
     <div class="radio">
       <input
         type="radio"
-        name="employment-one-contact"
+        name="employmentOneContact"
         value="No"
         id="not-contact-previous-supervisor-one"
       >
@@ -230,43 +298,75 @@
     </div>
 
     <h3>Employment Two</h3>
-    <!-- employment two company -->
-    <label for="employment-two-company">Company</label>
-    <input type="text" name="employment-two-company" id="employment-two-company">
 
-    <!-- employment two address -->
-    <label for="employment-two-address">Address</label>
-    <input type="text" name="employment-two-address" id="employment-two-address">
+    <label>
+      Company
+      <input
+        type="text"
+        name="employmentTwoCompany"
+        @input="ev => form.employmentTwoCompany = ev.target.value"
+      >
+    </label>
 
-    <!-- employment two phone number -->
-    <label for="employment-two-phone-number">Phone Number</label>
-    <input type="text" name="employment-two-phone-number" id="employment-two-phone-number">
+    <label>
+      Address
+      <input
+        type="text"
+        name="employmentTwoAddress"
+        @input="ev => form.employmentTwoAddress = ev.target.value"
+      >
+    </label>
 
-    <!-- employment two supervisor -->
-    <label for="employment-two-supervisor">Supervisor Name</label>
-    <input type="text" name="employment-two-supervisor" id="employment-two-supervisor">
+    <label>
+      Phone Number
+      <input
+        type="text"
+        name="employmentTwoPhoneNumber"
+        @input="ev => form.employmentTwoPhoneNumber = ev.target.value"
+      >
+    </label>
 
-    <!-- employment two job title -->
-    <label for="employment-two-job-title">Job Title</label>
-    <input type="text" name="employment-two-job-title" id="employment-two-job-title">
+    <label>
+      Supervisor Name
+      <input
+        type="text"
+        name="employmentTwoSupervisor"
+        @input="ev => form.employmentTwoSupervisor = ev.target.value"
+      >
+    </label>
 
-    <!-- employment two responsibilities -->
-    <label for="employment-two-responsibilities">Responsibilities</label>
-    <input type="text" name="employment-two-responsibilities" id="employment-two-responsibilities">
+    <label>
+      Job Title
+      <input
+        type="text"
+        name="employmentTwoJobTitle"
+        @input="ev => form.employmentTwoJobTitle = ev.target.value"
+      >
+    </label>
 
-    <!-- employment two reason for leaving -->
-    <label for="employment-two-reason-for-leaving">Reason For Leaving</label>
-    <input
-      type="text"
-      name="employment-two-reason-for-leaving"
-      id="employment-two-reason-for-leaving"
-    >
+    <label>
+      Responsibilities
+      <input
+        type="text"
+        name="employmentTwoResponsibilities"
+        @input="ev => form.employmentTwoResponsibilities = ev.target.value"
+      >
+    </label>
+
+    <label>
+      Reason For Leaving
+      <input
+        type="text"
+        name="employmentTwoReasonForLeaving"
+        @input="ev => form.employmentTwoReasonForLeaving = ev.target.value"
+      >
+    </label>
 
     <h3>May we contact your previous supervisor for a reference?</h3>
     <div class="radio">
       <input
         type="radio"
-        name="employment-two-contact"
+        name="employmentTwoContact"
         value="Yes"
         id="contact-previous-supervisor-one"
       >
@@ -275,110 +375,135 @@
     <div class="radio">
       <input
         type="radio"
-        name="employment-two-contact"
+        name="employmentTwoContact"
         value="No"
         id="not-contact-previous-supervisor-one"
       >
       <label for="not-contact-previous-supervisor-one">No</label>
     </div>
 
-    <h3>Employment Three</h3>
-    <!-- employment three company -->
-    <label for="employment-three-company">Company</label>
-    <input type="text" name="employment-three-company" id="employment-three-company">
-
-    <!-- employment three address -->
-    <label for="employment-three-address">Address</label>
-    <input type="text" name="employment-three-address" id="employment-three-address">
-
-    <!-- employment three phone number -->
-    <label for="employment-three-phone-number">Phone Number</label>
-    <input type="text" name="employment-three-phone-number" id="employment-three-phone-number">
-
-    <!-- employment three supervisor -->
-    <label for="employment-three-supervisor">Supervisor Name</label>
-    <input type="text" name="employment-three-supervisor" id="employment-three-supervisor">
-
-    <!-- employment three job title -->
-    <label for="employment-three-job-title">Job Title</label>
-    <input type="text" name="employment-three-job-title" id="employment-three-job-title">
-
-    <!-- employment three responsibilities -->
-    <label for="employment-three-responsibilities">Responsibilities</label>
-    <input
-      type="text"
-      name="employment-three-responsibilities"
-      id="employment-three-responsibilities"
-    >
-
-    <!-- employment three reason for leaving -->
-    <label for="employment-three-reason-for-leaving">Reason For Leaving</label>
-    <input
-      type="text"
-      name="employment-three-reason-for-leaving"
-      id="employment-three-reason-for-leaving"
-    >
-
-    <h3>May we contact your previous supervisor for a reference?</h3>
-    <div class="radio">
-      <input
-        type="radio"
-        name="employment-three-contact"
-        value="Yes"
-        id="contact-previous-supervisor-one"
-      >
-      <label for="contact-previous-supervisor-one">Yes</label>
-    </div>
-    <div class="radio">
-      <input
-        type="radio"
-        name="employment-three-contact"
-        value="No"
-        id="not-contact-previous-supervisor-one"
-      >
-      <label for="not-contact-previous-supervisor-one">No</label>
-    </div>
     <div class="separator"></div>
     <h2>Disclaimer and Signature</h2>
     <p>I certify that my answers are true and complete to the best of my knowledge. If this application leads to employment, I understand that false or misleading information in my application or interview may result in my release.</p>
 
-    <!-- signature first name -->
-    <label for="signature-first-name">First Name</label>
-    <input type="text" name="signature-first-name" id="signature-first-name">
+    <label>
+      First Name
+      <input
+        type="text"
+        name="signatureFirstName"
+        @input="ev => form.signatureFirstName = ev.target.value"
+      >
+    </label>
 
-    <!-- signature last name -->
-    <label for="signature-last-name">Last Name</label>
-    <input type="text" name="signature-last-name" id="signature-last-name">
+    <label>
+      Last Name
+      <input
+        type="text"
+        name="signatureLastName"
+        @input="ev => form.signatureLastName = ev.target.value"
+      >
+    </label>
 
-    <!-- signature date -->
-    <label for="signature-date">Date</label>
-    <input type="text" name="signature-date" id="signature-date">
+    <label>
+      Date
+      <input
+        type="text"
+        name="signatureDate"
+        @input="ev => form.signatureDate = ev.target.value"
+      >
+    </label>
 
-    <Button
-      type="submit"
-      topText="Apply"
-      bottomText="Now!"
-      icon="inbox"
-      @click.prevent="handleSubmit()"
-    />
+    <Button type="submit" topText="Apply" bottomText="Now!" icon="inbox"/>
   </form>
 </template>
 
 <script>
 import Button from "@/components/atoms/Button";
-import router from "../router";
+// import router from "../router";
 
 export default {
   name: "Apply",
   components: {
     Button
   },
+  data() {
+    return {
+      form: {
+        firstName: "",
+        lastName: "",
+        address: "",
+        email: "",
+        phoneNumber: "",
+        citizenship: "",
+        authorizedToWork: "",
+        convictedOfAFelony: "",
+        workedForJBLong: "",
+        highSchool: "",
+        otherEducation: "",
+        referenceOneFirstName: "",
+        referenceOneLastName: "",
+        referenceOneRelationship: "",
+        referenceOnePhoneNumber: "",
+        referenceOneAddress: "",
+        referenceTwoFirstName: "",
+        referenceTwoLastName: "",
+        referenceTwoRelationship: "",
+        referenceTwoPhoneNumber: "",
+        referenceTwoAddress: "",
+        employmentOneCompany: "",
+        employmentOneAddress: "",
+        employmentOnePhoneNumber: "",
+        employmentOneSupervisor: "",
+        employmentOneJobTitle: "",
+        employmentOneResponsibilities: "",
+        employmentOneReasonForLeaving: "",
+        employmentOneContact: "",
+        employmentTwoCompany: "",
+        employmentTwoAddress: "",
+        employmentTwoPhoneNumber: "",
+        employmentTwoSupervisor: "",
+        employmentTwoJobTitle: "",
+        employmentTwoResponsibilities: "",
+        employmentTwoReasonForLeaving: "",
+        employmentTwoContact: "",
+        signatureFirstName: "",
+        signatureLastName: "",
+        signatureDate: ""
+      }
+    };
+  },
   methods: {
+    /**
+     * encode.
+     */
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
     /**
      * handleSubmit.
      */
-    handleSubmit() {
-      this.router.push("/thanks");
+    handleSubmit(e) {
+      console.log(this.form);
+      console.log(this.form.firstName);
+      console.log(this.form.lastName);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": "job-application",
+          ...this.form
+        })
+      })
+        .then(() => {
+          this.$router.push("thanks");
+        })
+        .catch(() => {
+          this.$router.push("oops");
+        });
     }
   }
 };
