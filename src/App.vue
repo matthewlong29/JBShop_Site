@@ -25,6 +25,7 @@ export default {
 body {
   margin: 0;
   margin-top: calc(82px + 50px); // top header + bottom header height
+  overflow-x: hidden;
 }
 
 h1,
