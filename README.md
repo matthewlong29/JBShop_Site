@@ -41,11 +41,3 @@ npm run test:unit
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# API keys
-
-API keys are exported from a config.js file.
-
-#**\*** DESIGN
-
-- [Header](http://preview.themeforest.net/item/car-shire-auto-mechanic-car-repair-template/full_screen_preview/12315477)
