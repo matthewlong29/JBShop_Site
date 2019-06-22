@@ -16,10 +16,7 @@
         icon="phone"
       ></Button>
     </div>
-    <div
-      class="image-container"
-      :style="{height: `${contentHeight + (contentHeight / 5)}px`}"
-    ></div>
+    <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>
   </section>
 </template>
 
@@ -38,6 +35,7 @@ export default {
     window.addEventListener("load", () => {
       this.contentHeight = this.$el.firstElementChild.clientHeight;
       console.log("this.contentHeight: " + this.contentHeight);
+      console.log("key: " + process.env.googleMapsAPIKey);
     });
   }
 };

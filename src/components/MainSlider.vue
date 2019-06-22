@@ -28,8 +28,8 @@ export default {
       timer: setInterval(this.countdown, 1000),
       progressPercentage: 100,
       messages: [
-        ["The best car repair service in your area!", "Since 1984!"],
-        ["Something else about car repair!", "We repair with love."],
+        ["Best car repair service in your area!", "Since 1984!"],
+        ["Family owned and operated!", "We repair with love."],
         ["Walk-ins always welcome!", "Or call now at (502) 695-4477"]
       ],
       images: [
