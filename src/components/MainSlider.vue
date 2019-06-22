@@ -109,6 +109,7 @@ export default {
 }
 
 section {
+  @include userSelect(none);
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -138,6 +139,7 @@ section {
       }
     }
     button {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       height: 120px;

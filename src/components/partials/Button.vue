@@ -23,6 +23,7 @@ export default {
 @import "../../styles/scss/variables";
 
 a {
+  @include userSelect(none);
   text-decoration: none;
   button {
     cursor: pointer;

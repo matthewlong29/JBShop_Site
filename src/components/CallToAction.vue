@@ -19,7 +19,7 @@
     <div
       class="image-container"
       :style="{height: `${contentHeight + (contentHeight / 5)}px`}"
-      v-lazy:background-image="'/images/call-to-action.jpg'"
+      background-image="'/images/call-to-action.jpg'"
     ></div>
   </section>
 </template>

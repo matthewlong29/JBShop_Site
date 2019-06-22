@@ -13,9 +13,6 @@
       <router-link to="/#jobs">
         <li>Jobs</li>
       </router-link>
-      <router-link to="/#contact">
-        <li>Contact</li>
-      </router-link>
     </ul>
   </nav>
 </template>
@@ -35,6 +32,7 @@ export default {
 }
 
 nav {
+  @include userSelect(none);
   width: 100%;
   position: fixed;
   top: 82px;

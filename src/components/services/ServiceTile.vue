@@ -50,6 +50,7 @@ export default {
 @import "../../styles/scss/variables";
 
 .service-tile {
+  @include userSelect(none);
   display: flex;
   flex: 1 1 330px;
   height: 170px;

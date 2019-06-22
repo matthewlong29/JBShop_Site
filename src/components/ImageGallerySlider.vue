@@ -257,6 +257,7 @@ export default {
         width: 100%;
         text-align: center;
         visibility: hidden;
+        @include userSelect(none);
         h3 {
           color: $red;
         }

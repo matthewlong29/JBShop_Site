@@ -39,6 +39,7 @@ export default {
 }
 
 .header-top {
+  @include userSelect(none);
   @extend %container;
   display: flex;
   justify-content: space-between;

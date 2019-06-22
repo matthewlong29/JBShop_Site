@@ -9,3 +9,10 @@ $black: #000000;
 
 $titleFont: "Roboto", sans-serif;
 $bodyFont: "Open Sans", sans-serif;
+
+@mixin userSelect ($arg) {
+  -webkit-user-select: $arg;
+  -moz-user-select: $arg;
+  -ms-user-select: $arg;
+  user-select: $arg;
+}

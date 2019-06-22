@@ -1,12 +1,12 @@
 <template>
   <form
-    name="contact"
+    name="application"
     action="/"
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="form-name" value="contact">
+    <input type="hidden" name="form-name" value="application">
 
     <h1>Applicant Information</h1>
     <!-- first name -->

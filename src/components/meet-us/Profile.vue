@@ -48,8 +48,8 @@ export default {
 
 %button {
   @include createBackground(
-    darken($color: $red, $amount: 6),
-    darken($color: $red, $amount: 6),
+    darken($color: $red, $amount: 14),
+    darken($color: $red, $amount: 7),
     "/images/textures/concrete-dark.jpg"
   );
   display: block;
@@ -60,19 +60,20 @@ export default {
   border-radius: 0 0 8px 8px;
   padding: 10px;
   width: 100%;
-  box-shadow: 0 0 1px transparentize($color: $black, $amount: 0.85);
+  box-shadow: 0 -1px 2px transparentize($color: $black, $amount: 0.65),
+    0 0 10px transparentize($color: $black, $amount: 0.85);
   cursor: pointer;
   svg {
     height: 20px;
     width: auto;
   }
   &:hover {
-    box-shadow: 0 0 4px transparentize($color: $black, $amount: 0.75);
+    box-shadow: 0 -1px 5px transparentize($color: $black, $amount: 0.75);
   }
 }
 
 * {
-  transition: 0.35s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .profile-card {
@@ -119,6 +120,7 @@ export default {
         height: 100%;
         width: 100%;
         img {
+          @include userSelect(none);
           border: 2px solid $white;
           border-radius: 50%;
           height: 140px;
@@ -131,6 +133,7 @@ export default {
       }
     }
     .titles {
+      @include userSelect(none);
       text-align: center;
       margin-top: 39px;
       padding: 20px;
@@ -163,6 +166,7 @@ export default {
     background-position: center;
     background-size: cover;
     p {
+      @include userSelect(none);
       color: $white;
       height: calc(100% - 60px);
       background-color: transparentize($color: $black, $amount: 0.55);

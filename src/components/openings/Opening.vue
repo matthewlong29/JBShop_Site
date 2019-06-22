@@ -52,6 +52,7 @@ export default {
       justify-content: space-between;
       align-items: center;
       .titles {
+        @include userSelect(none);
         h3,
         h4 {
           margin: 0;
@@ -62,6 +63,7 @@ export default {
         }
       }
       .date-posted {
+        @include userSelect(none);
         h4 {
           color: $red;
         }
