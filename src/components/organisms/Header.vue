@@ -1,7 +1,7 @@
 <template>
   <header>
-    <HeaderTop></HeaderTop>
-    <HeaderBottom></HeaderBottom>
+    <HeaderTop/>
+    <HeaderBottom/>
   </header>
 </template>
 

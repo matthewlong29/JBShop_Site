@@ -354,17 +354,32 @@
     <label for="signature-date">Date</label>
     <input type="text" name="signature-date" id="signature-date">
 
-    <Button type="submit" topText="Apply" bottomText="Now!" icon="inbox"/>
+    <Button
+      type="submit"
+      topText="Apply"
+      bottomText="Now!"
+      icon="inbox"
+      @click.prevent="handleSubmit()"
+    />
   </form>
 </template>
 
 <script>
 import Button from "@/components/atoms/Button";
+import router from "../router";
 
 export default {
   name: "Apply",
   components: {
     Button
+  },
+  methods: {
+    /**
+     * handleSubmit:
+     */
+    handleSubmit() {
+      this.router.push("/thanks");
+    }
   }
 };
 </script>
