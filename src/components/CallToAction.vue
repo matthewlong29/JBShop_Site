@@ -19,7 +19,6 @@
     <div
       class="image-container"
       :style="{height: `${contentHeight + (contentHeight / 5)}px`}"
-      background-image="'/images/call-to-action.jpg'"
     ></div>
   </section>
 </template>
@@ -49,7 +48,7 @@ export default {
 @import "../styles/scss/placeholders";
 
 * {
-  transition: all ease-in-out 0.25s;
+  transition: all ease-in-out 0.15s;
 }
 
 .call-to-action {
@@ -94,6 +93,7 @@ export default {
   .image-container {
     width: calc(100% / 3);
     background-position: center right;
+    background-image: url("/images/call-to-action.jpg");
     background-size: cover;
     border-radius: 6px 0 0 6px;
     box-shadow: 0 0 4px 2px transparentize($color: $black, $amount: 0.75);
