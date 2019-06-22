@@ -33,9 +33,15 @@ export default {
   },
 
   methods: {
+    /**
+     * setPlace.
+     */
     setPlace(place) {
       this.currentPlace = place;
     },
+    /**
+     * addMarker.
+     */
     addMarker() {
       if (this.currentPlace) {
         const marker = {
@@ -48,7 +54,10 @@ export default {
         this.currentPlace = null;
       }
     },
-    geolocate: function() {
+    /**
+     * geolocate.
+     */
+    geolocate() {
       navigator.geolocation.getCurrentPosition(position => {
         this.center = {
           lat: position.coords.latitude,

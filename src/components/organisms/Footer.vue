@@ -99,6 +99,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * getCurrentYear.
+     */
     getCurrentYear() {
       return this.currentYear.getFullYear();
     }

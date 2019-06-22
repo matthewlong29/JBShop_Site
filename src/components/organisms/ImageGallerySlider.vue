@@ -140,17 +140,17 @@ export default {
     let movingRight = true;
     let movingLeft = false;
 
-    // setInterval(() => {
-    //   if (!this.userHasControl) {
-    //     if (movingRight) {
-    //       movingRight = this.decrementMargin();
-    //       movingLeft = !movingRight;
-    //     } else {
-    //       movingLeft = this.incrementMargin();
-    //       movingRight = !movingLeft;
-    //     }
-    //   }
-    // }, 3000);
+    setInterval(() => {
+      if (!this.userHasControl) {
+        if (movingRight) {
+          movingRight = this.decrementMargin();
+          movingLeft = !movingRight;
+        } else {
+          movingLeft = this.incrementMargin();
+          movingRight = !movingLeft;
+        }
+      }
+    }, 3000);
   },
   methods: {
     /**

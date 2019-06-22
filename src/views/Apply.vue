@@ -375,7 +375,7 @@ export default {
   },
   methods: {
     /**
-     * handleSubmit:
+     * handleSubmit.
      */
     handleSubmit() {
       this.router.push("/thanks");

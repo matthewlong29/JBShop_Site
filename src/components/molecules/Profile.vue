@@ -35,6 +35,9 @@ export default {
     };
   },
   methods: {
+    /**
+     * toggleDescription.
+     */
     toggleDescription() {
       this.viewDescription = !this.viewDescription;
     }
