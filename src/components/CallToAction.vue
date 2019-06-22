@@ -36,7 +36,6 @@ export default {
       this.contentHeight = this.$el.firstElementChild.clientHeight;
       console.log("this.contentHeight: " + this.contentHeight);
       console.log("key: " + process.env.googleMapsAPIKey);
-      console.log("NODE_ENV: " + process.env.NODE_ENV)
     });
   }
 };
