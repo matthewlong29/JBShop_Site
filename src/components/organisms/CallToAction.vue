@@ -8,7 +8,7 @@
         or
         <strong>Call now</strong> to book an appointment!
       </h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p>If you're in need of collision repair, rest assured that we focus on superior quality and premier customer service! If you're still unsure don't hesitate in calling now to get a <strong>free</strong> estimate at your convenience!</p>
       <Button link="tel:5026954477" topText="(502) 695-4477" bottomText="Call now!" icon="phone"/>
     </div>
     <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>

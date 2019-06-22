@@ -1,7 +1,7 @@
 <template>
   <section id="image-gallery">
     <div class="image-slider-control">
-      <TitleAndSubtitle title="Our Gallery" subtitle="Some subtitle about the gallery.."/>
+      <TitleAndSubtitle title="Our Gallery" subtitle="Here's a quick tour of where your car will be while we get it back to looking new!"/>
       <div>
         <button v-on:click="incrementMargin(); userHasControl = true" :disabled="marginVal >= -30">
           <font-awesome-icon icon="arrow-left"/>
