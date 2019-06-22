@@ -10,7 +10,7 @@
           <h3>{{jobTitle}}</h3>
         </div>
         <div class="date-posted">
-          <h4>{{datePosted}}</h4>
+          <h4>{{setDatePosted(datePosted)}}</h4>
         </div>
       </div>
       <p>{{jobDescription}}</p>
@@ -21,7 +21,31 @@
 <script>
 export default {
   name: "Opening",
-  props: ["jobTitle", "jobDescription", "areaOfWork", "icon", "datePosted"]
+  props: ["jobTitle", "jobDescription", "areaOfWork", "icon", "datePosted"],
+  methods: {
+    /**
+     * setDatePosted.
+     */
+    setDatePosted(date) {
+      let currentDate = new Date();
+      let datePosted = new Date(date);
+      let timeDifference = currentDate.getTime() - datePosted.getTime(); // get time difference in ms
+      let minTimeBetween = 7 * 1000 * 60 * 60 * 24; // 7 days in ms
+
+      if (timeDifference > minTimeBetween) {
+        currentDate.setDate(currentDate.getDate() - 3); // job posting was old so reposing to three days ago
+        return this.buildDateString(currentDate);
+      }
+
+      return this.buildDateString(datePosted);
+    },
+    /**
+     * buildDateString.
+     */
+    buildDateString(date) {
+      return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+    }
+  }
 };
 </script>
 
@@ -77,6 +101,14 @@ export default {
   &:hover {
     .opening-info-container {
       background-color: transparentize($color: $black, $amount: 0.95);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .opening {
+    .icon-container {
+      display: none;
     }
   }
 }
