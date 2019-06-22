@@ -70,6 +70,5 @@ export default {
 
 section {
   border-top: 4px solid $red;
-  border-bottom: 4px solid $red;
 }
 </style>

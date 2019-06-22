@@ -117,6 +117,7 @@ footer {
     darken($color: $blue, $amount: 23),
     "/images/textures/concrete-dark.jpg"
   );
+  border-top: 4px solid $red;
   .main-footer-content {
     @extend %container;
     display: flex;
