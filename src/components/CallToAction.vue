@@ -34,10 +34,6 @@ export default {
   mounted() {
     window.addEventListener("load", () => {
       this.contentHeight = this.$el.firstElementChild.clientHeight;
-      console.log("this.contentHeight: " + this.contentHeight);
-      console.log("key: " + process.env.googleMapsAPIKey);
-      console.log("process.env: ");
-      console.log(process.env);
     });
   }
 };
