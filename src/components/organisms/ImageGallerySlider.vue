@@ -50,7 +50,7 @@ export default {
         {
           url: "/images/gallery/washing-car.jpg",
           category: "Washing Car",
-          message: "Your car gets washed before you get it back"
+          message: "We wash your car"
         },
         {
           url: "/images/gallery/taping-to-paint.jpg",

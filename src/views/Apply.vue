@@ -354,13 +354,18 @@
     <label for="signature-date">Date</label>
     <input type="text" name="signature-date" id="signature-date">
 
-    <input type="submit" value="Apply Now" class>
+    <Button type="submit" topText="Apply" bottomText="Now!" icon="inbox"/>
   </form>
 </template>
 
 <script>
+import Button from "@/components/atoms/Button";
+
 export default {
-  name: "Apply"
+  name: "Apply",
+  components: {
+    Button
+  }
 };
 </script>
 
@@ -370,6 +375,7 @@ export default {
 
 form {
   @extend %container;
+  margin-bottom: 5rem;
   h1 {
     padding-top: 1.5rem;
   }
@@ -391,23 +397,20 @@ form {
     padding: 0.25rem;
     margin-bottom: 1rem;
   }
-  input[type="submit"] {
-    margin-bottom: 2rem;
-  }
   div {
     &.radio {
       display: block;
     }
     &.separator {
       margin-top: 1.5rem;
-      height: 3px;
+      height: 5px;
       width: 100%;
       background: repeating-linear-gradient(
         -37deg,
-        lighten($color: $blue, $amount: 34),
-        lighten($color: $blue, $amount: 34) 51px,
-        lighten($color: $blue, $amount: 57) 51px,
-        lighten($color: $blue, $amount: 57) 97px
+        lighten($color: $black, $amount: 34),
+        lighten($color: $black, $amount: 34) 51px,
+        lighten($color: $black, $amount: 57) 51px,
+        lighten($color: $black, $amount: 57) 97px
       );
     }
   }
