@@ -61,7 +61,7 @@
       <label for="not-convicted-of-a-felony">No</label>
     </div>
     <!-- convicted of a felony -->
-    <h3>Have you ever worked for jb-long-and-son-body-shop?</h3>
+    <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
     <div class="radio">
       <input
         type="radio"
