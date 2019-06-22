@@ -1,21 +1,23 @@
 <template>
-  <div class="opening">
-    <div class="icon-container">
-      <font-awesome-icon :icon="icon"/>
-    </div>
-    <div class="opening-info-container">
-      <div class="title-and-date-container">
-        <div class="titles">
-          <h4>{{areaOfWork}}</h4>
-          <h3>{{jobTitle}}</h3>
-        </div>
-        <div class="date-posted">
-          <h4>{{setDatePosted(datePosted)}}</h4>
-        </div>
+  <router-link to="/apply">
+    <div class="opening">
+      <div class="icon-container">
+        <font-awesome-icon :icon="icon"/>
       </div>
-      <p>{{jobDescription}}</p>
+      <div class="opening-info-container">
+        <div class="title-and-date-container">
+          <div class="titles">
+            <h4>{{areaOfWork}}</h4>
+            <h3>{{jobTitle}}</h3>
+          </div>
+          <div class="date-posted">
+            <h4>{{setDatePosted(datePosted)}}</h4>
+          </div>
+        </div>
+        <p>{{jobDescription}}</p>
+      </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -55,7 +57,7 @@ export default {
 
 .opening {
   display: flex;
-  margin: 5rem 1rem;
+  margin: 1.5rem 16px;
   .icon-container {
     display: flex;
     align-items: center;
