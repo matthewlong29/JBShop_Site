@@ -67,16 +67,16 @@
         <h2>Navigation</h2>
         <ul>
           <li>
-            <router-link to="#home">Home</router-link>
+            <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="#about">About</router-link>
+            <router-link to="/#about">About</router-link>
           </li>
           <li>
-            <router-link to="#team">Team</router-link>
+            <router-link to="/#team">Team</router-link>
           </li>
           <li>
-            <router-link to="#jobs">Jobs</router-link>
+            <router-link to="/#jobs">Jobs</router-link>
           </li>
         </ul>
       </div>
@@ -91,7 +91,6 @@
 </template>
 
 <script>
-// TODO link services to services section
 export default {
   name: "Footer",
   data() {
