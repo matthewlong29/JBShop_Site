@@ -9,12 +9,7 @@
         <strong>Call now</strong> to book an appointment!
       </h3>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <Button
-        link="tel:5026954477"
-        topText="(502) 695-4477"
-        bottomText="Call now!"
-        icon="phone"
-      ></Button>
+      <Button link="tel:5026954477" topText="(502) 695-4477" bottomText="Call now!" icon="phone"></Button>
     </div>
     <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>
   </section>
@@ -34,7 +29,17 @@ export default {
   mounted() {
     window.addEventListener("load", () => {
       this.contentHeight = this.$el.firstElementChild.clientHeight;
+      this.onImageLoad();
     });
+  },
+  methods: {
+    /**
+     * onImageLoad: sets the width of the image (if and when it loads) to be 1 /3 the width of the container.
+     */
+    onImageLoad() {
+      let image = document.querySelector(".image-container");
+      image.style.width = "calc(100% / 3)";
+    }
   }
 };
 </script>
@@ -58,7 +63,7 @@ export default {
     justify-content: center;
     align-items: flex-start;
     padding: 1rem 5rem;
-    width: calc(200% / 3);
+    // width: calc(200% / 3);
     min-height: 300px;
     background: repeating-linear-gradient(
       -55deg,
@@ -87,7 +92,6 @@ export default {
     }
   }
   .image-container {
-    width: calc(100% / 3);
     background-position: center right;
     background-image: url("/images/call-to-action.jpg");
     background-size: cover;
