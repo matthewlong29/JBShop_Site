@@ -101,7 +101,6 @@ export default {
   },
   methods: {
     getCurrentYear() {
-      console.log(`current date: ${this.currentYear}`);
       return this.currentYear.getFullYear();
     }
   }

@@ -125,13 +125,13 @@ export default {
       ]
     };
   },
-  /*****
+  /**
    *
    */
   beforeMount() {
     this.calculateImageWidth();
   },
-  /*****
+  /**
    * when component is created: increments and decrements margin while user doesnt have control.
    */
   created() {
@@ -153,7 +153,7 @@ export default {
     }, 1500);
   },
   methods: {
-    /*****
+    /**
      * decrementMargin: decrement margin by the width of the image.
      * TODO: instead of incrementing width of images increment by width of section / num of images
      */
@@ -165,7 +165,7 @@ export default {
 
       return false;
     },
-    /*****
+    /**
      * incrementMargin: increment margin by the width of the image.
      */
     incrementMargin() {
@@ -176,7 +176,7 @@ export default {
 
       return false;
     },
-    /*****
+    /**
      * calculateImageWidth: calculate image width based on size of window.
      */
     calculateImageWidth() {

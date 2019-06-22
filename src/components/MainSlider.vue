@@ -41,7 +41,7 @@ export default {
     };
   },
   methods: {
-    /***** countdown
+    /** countdown
      * TODO only execute countdown if it is inside the view
      */
     countdown() {
@@ -52,44 +52,39 @@ export default {
         this.calculateProgressPercentage();
       }
     },
-    /***** calculateProgressPercentage
+    /** calculateProgressPercentage
      * TODO: get setTimeout to work propperly such that once reset it waits before countign down again
      * TODO: reset progress to 100 whenever clicking decrement or increment counter button
      */
     calculateProgressPercentage() {
       this.progressPercentage = (this.timeLeft / this.originalTime) * 100;
-      // console.log(this.progressPercentage);
       // reset progress and restart countdown
       if (this.progressPercentage <= 0) {
         setTimeout(this.resetProgressPercentage(), 5000);
       }
     },
-    /***** resetProgressPercentage
+    /** resetProgressPercentage
      */
     resetProgressPercentage() {
       this.progressPercentage = 100;
       this.timeLeft = this.originalTime;
       this.incrementCounter();
     },
-    /***** decrementCounter
+    /** decrementCounter
      */
     decrementCounter() {
       if (this.counter === 0) {
-        console.log("counter is " + this.counter);
         this.counter = 2;
       } else {
-        console.log("counter is " + this.counter);
         this.counter--;
       }
     },
-    /***** incrementCounter
+    /** incrementCounter
      */
     incrementCounter() {
       if (this.counter === 2) {
-        // console.log("counter is " + this.counter);
         this.counter = 0;
       } else {
-        // console.log("counter is " + this.counter);
         this.counter++;
       }
     }
@@ -120,10 +115,10 @@ section {
     align-items: center;
     height: 100%;
     .messages-container {
-      // TODO add transitions for messages
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      padding: 0.5rem;
       h1 {
         background: transparentize($color: $blue, $amount: 0.25);
         padding: 1rem;

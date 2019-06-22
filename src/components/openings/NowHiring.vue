@@ -6,7 +6,7 @@
         subtitle="If you think you'd be a good fit, or see an open position below that you're interested in, fill out an application and call now to schedule an interview!"
       ></TitleAndSubtitle>
       <router-link to="/apply">
-        <Button icon="inbox" topText="Apply" bottomText="Now"></Button>
+        <Button icon="inbox" topText="Apply" bottomText="Today!"></Button>
       </router-link>
     </div>
     <Opening

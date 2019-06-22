@@ -12,7 +12,7 @@
       <Button
         link="tel:5026954477"
         topText="(502) 695-4477"
-        bottomText="Call now to schedule your free consultation!"
+        bottomText="Call now!"
         icon="phone"
       ></Button>
     </div>
@@ -105,6 +105,7 @@ export default {
   .call-to-action {
     .content-container {
       width: 100%;
+      padding: 1rem 2rem;
     }
     .image-container {
       display: none;
