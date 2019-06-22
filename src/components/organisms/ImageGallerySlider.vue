@@ -50,77 +50,77 @@ export default {
         {
           url: "/images/gallery/washing-car.jpg",
           category: "Washing Car",
-          message: "im some message for image"
+          message: "Your car gets washed before you get it back"
         },
         {
           url: "/images/gallery/taping-to-paint.jpg",
           category: "Painting",
-          message: "im some message for image"
+          message: "Preparing for painting"
         },
         {
           url: "/images/gallery/shop-work-area.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Back of the main building"
         },
         {
           url: "/images/gallery/painting-technique.jpg",
           category: "Paint",
-          message: "im some message for image"
+          message: "Painters do light body work too"
         },
         {
           url: "/images/gallery/shop-body-building.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Second building"
         },
         {
           url: "/images/gallery/shop-back-lot.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Back lot of main building"
         },
         {
           url: "/images/gallery/paint-booth.jpg",
           category: "Paint",
-          message: "im some message for image"
+          message: "Inside one of the paint booths"
         },
         {
           url: "/images/gallery/shop-garages.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Back lot and garages"
         },
         {
           url: "/images/gallery/general-repair.jpg",
           category: "General Collision Repair",
-          message: "im some message for image"
+          message: "Light body work"
         },
         {
           url: "/images/gallery/shop-main-building.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Outside front office"
         },
         {
           url: "/images/gallery/project-one-before.jpg",
           category: "Project One",
-          message: "im some message for image"
+          message: "Before repair"
         },
         {
           url: "/images/gallery/project-one-after.jpg",
           category: "Project One",
-          message: "im some message for image"
+          message: "After repair"
         },
         {
           url: "/images/gallery/project-two-before.jpg",
           category: "Project Two",
-          message: "im some message for image"
+          message: "Before repair"
         },
         {
           url: "/images/gallery/project-two-after.jpg",
           category: "Project Two",
-          message: "im some message for image"
+          message: "After repair"
         },
         {
           url: "/images/gallery/shop-building-title.jpg",
           category: "Building",
-          message: "im some message for image"
+          message: "Jb Long and Son Body Shop"
         }
       ]
     };
@@ -140,17 +140,17 @@ export default {
     let movingRight = true;
     let movingLeft = false;
 
-    setInterval(() => {
-      if (!this.userHasControl) {
-        if (movingRight) {
-          movingRight = this.decrementMargin();
-          movingLeft = !movingRight;
-        } else {
-          movingLeft = this.incrementMargin();
-          movingRight = !movingLeft;
-        }
-      }
-    }, 1500);
+    // setInterval(() => {
+    //   if (!this.userHasControl) {
+    //     if (movingRight) {
+    //       movingRight = this.decrementMargin();
+    //       movingLeft = !movingRight;
+    //     } else {
+    //       movingLeft = this.incrementMargin();
+    //       movingRight = !movingLeft;
+    //     }
+    //   }
+    // }, 3000);
   },
   methods: {
     /**
@@ -260,10 +260,12 @@ export default {
         @include userSelect(none);
         h3 {
           color: $red;
+          font-size: 1rem;
         }
         p {
           color: $white;
           padding-bottom: 1rem;
+          font-size: 0.85rem;
         }
       }
       &:hover {
@@ -277,6 +279,23 @@ export default {
           p {
             margin: 0;
             animation: slide-up-fade-in ease 0.25s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #image-gallery {
+    .images-container {
+      .image {
+        .overlay-bottom {
+          h3 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.75rem;
           }
         }
       }
