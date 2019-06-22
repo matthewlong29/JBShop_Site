@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import HeaderTop from "@/components/header/HeaderTop";
-import HeaderBottom from "@/components/header/HeaderBottom";
+import HeaderTop from "@/components/molecules/HeaderTop";
+import HeaderBottom from "@/components/molecules/HeaderBottom";
 
 export default {
   name: "Header",
@@ -21,6 +21,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/scss/placeholders";
 @import "../../styles/scss/variables";
+
 header {
   @extend %container;
   display: flex;

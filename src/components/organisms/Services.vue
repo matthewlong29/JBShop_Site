@@ -49,8 +49,8 @@
 </template>
 
 <script>
-import ServiceTile from "@/components/services/ServiceTile";
-import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
+import ServiceTile from "@/components/molecules/ServiceTile";
+import TitleAndSubtitle from "@/components/atoms/TitleAndSubtitle";
 
 export default {
   name: "Services",
@@ -62,7 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/scss/variables";
 @import "../../styles/scss/placeholders";
 
 section {

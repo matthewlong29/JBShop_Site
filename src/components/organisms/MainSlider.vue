@@ -96,8 +96,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
+@import "../../styles/scss/variables";
 
 * {
   transition: all 0.25s ease-in-out;

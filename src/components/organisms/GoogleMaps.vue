@@ -61,8 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
+@import "../../styles/scss/variables";
 
 // Always set the map height explicitly to define the size of the div element that contains the map.
 #map {

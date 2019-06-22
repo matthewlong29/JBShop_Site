@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
+import TitleAndSubtitle from "@/components/atoms/TitleAndSubtitle";
 import { setTimeout, setInterval, clearTimeout } from "timers";
 
 export default {
@@ -197,8 +197,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/scss/variables";
-@import "../styles/scss/placeholders";
+@import "../../styles/scss/variables";
+@import "../../styles/scss/placeholders";
 
 @keyframes slide-up-fade-in {
   0% {

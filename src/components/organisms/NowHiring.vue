@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import TitleAndSubtitle from "@/components/partials/TitleAndSubtitle";
-import Button from "@/components/partials/Button";
-import Opening from "@/components/openings/Opening";
+import TitleAndSubtitle from "@/components/atoms/TitleAndSubtitle";
+import Button from "@/components/atoms/Button";
+import Opening from "@/components/molecules/Opening";
 
 export default {
   name: "NowHiring",

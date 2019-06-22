@@ -46,7 +46,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// TODO: [use this design](https://www.awwwards.com/awards/gallery/2015/09/9_silktricky_awwwards_cards.png)
 @import "../../styles/scss/variables";
 
 .service-tile {
