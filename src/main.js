@@ -38,7 +38,8 @@ import {
   faWrench,
   faPaintBrush,
   faSprayCan,
-  faInbox
+  faInbox,
+  faSmileBeam
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -64,7 +65,8 @@ library.add(
   faWrench,
   faPaintBrush,
   faSprayCan,
-  faInbox
+  faInbox,
+  faSmileBeam
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

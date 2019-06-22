@@ -376,8 +376,11 @@ export default {
 form {
   @extend %container;
   margin-bottom: 5rem;
+  padding-top: 1.5rem;
   h1 {
-    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
   }
   h3 {
     margin-top: 2rem;

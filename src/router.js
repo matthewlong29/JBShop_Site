@@ -26,9 +26,13 @@ export default new Router({
       component: SubmissionSuccess
     },
     {
-      path: "/404",
+      path: "/oops",
       name: "fail",
       component: SubmissionFail
+    },
+    {
+      path: "/*", // if no path before this one is found redirect to home
+      redirect: "/"
     }
   ]
 });
