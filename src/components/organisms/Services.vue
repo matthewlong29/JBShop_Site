@@ -2,7 +2,7 @@
   <section>
     <TitleAndSubtitle
       title="Why choose us?"
-      subtitle="We are a preferred collision repair shop by most insurance carriers. Also, we are family owned and operated since 1984."
+      subtitle="We are a preferred collision repair shop by many insurance carriers. Also, we are family owned and operated since 1984."
     />
     <div class="tiles-container">
       <ServiceTile
