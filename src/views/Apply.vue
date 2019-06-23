@@ -39,7 +39,7 @@
       >
     </label>
 
-    <h3>Citizenship</h3>
+    <!-- <h3>Citizenship</h3>
     <div class="radio">
       <input type="radio" name="citizenship" value="US Citizen" id="us-citizen">
       <label for="us-citizen">US Citizen</label>
@@ -47,9 +47,9 @@
     <div class="radio">
       <input type="radio" name="citizenship" value="Foreign National" id="foreign-national">
       <label for="foreign-national">Foreign National</label>
-    </div>
+    </div>-->
 
-    <h3>Authorized to work in the USA?</h3>
+    <!-- <h3>Authorized to work in the USA?</h3>
     <div class="radio">
       <input type="radio" name="authorizedToWork" value="Yes" id="authorizedToWork">
       <label for="authorizedToWork">Yes</label>
@@ -57,9 +57,9 @@
     <div class="radio">
       <input type="radio" name="authorizedToWork" value="No" id="notAuthorizedToWork">
       <label for="notAuthorizedToWork">No</label>
-    </div>
+    </div>-->
 
-    <h3>Have you ever been convicted of a felony?</h3>
+    <!-- <h3>Have you ever been convicted of a felony?</h3>
     <div class="radio">
       <input type="radio" name="convictedOfAFelony" value="Yes" id="convictedOfAFelony">
       <label for="convictedOfAFelony">Yes</label>
@@ -67,9 +67,9 @@
     <div class="radio">
       <input type="radio" name="convictedOfAFelony" value="No" id="notConvictedOfAFelony">
       <label for="notConvictedOfAFelony">No</label>
-    </div>
+    </div>-->
 
-    <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
+    <!-- <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
     <div class="radio">
       <input type="radio" name="workedForJBLong" value="Yes" id="workedForJBLong">
       <label for="workedForJBLong">Yes</label>
@@ -77,7 +77,7 @@
     <div class="radio">
       <input type="radio" name="workedForJBLong" value="No" id="notWorkedForJBLong">
       <label for="notWorkedForJBLong">No</label>
-    </div>
+    </div>-->
 
     <div class="separator"></div>
     <h2>Education</h2>
@@ -91,7 +91,7 @@
       >
     </label>
 
-    <h3>Did you graduate from high school?</h3>
+    <!-- <h3>Did you graduate from high school?</h3>
     <div class="radio">
       <input type="radio" name="highSchool" value="Yes" id="graduated">
       <label for="graduated">Yes</label>
@@ -99,7 +99,7 @@
     <div class="radio">
       <input type="radio" name="highSchool" value="No" id="not-graduated">
       <label for="not-graduated">No</label>
-    </div>
+    </div>-->
 
     <label>
       Other Education
@@ -275,8 +275,7 @@
       >
     </label>
 
-    <h3>May we contact your previous supervisor for a reference?</h3>
-
+    <!-- <h3>May we contact your previous supervisor for a reference?</h3>
     <div class="radio">
       <input
         type="radio"
@@ -286,7 +285,6 @@
       >
       <label for="contact-previous-supervisor-one">Yes</label>
     </div>
-
     <div class="radio">
       <input
         type="radio"
@@ -295,10 +293,9 @@
         id="not-contact-previous-supervisor-one"
       >
       <label for="not-contact-previous-supervisor-one">No</label>
-    </div>
+    </div>-->
 
     <h3>Employment Two</h3>
-
     <label>
       Company
       <input
@@ -362,7 +359,7 @@
       >
     </label>
 
-    <h3>May we contact your previous supervisor for a reference?</h3>
+    <!-- <h3>May we contact your previous supervisor for a reference?</h3>
     <div class="radio">
       <input
         type="radio"
@@ -380,7 +377,7 @@
         id="not-contact-previous-supervisor-one"
       >
       <label for="not-contact-previous-supervisor-one">No</label>
-    </div>
+    </div>-->
 
     <div class="separator"></div>
     <h2>Disclaimer and Signature</h2>
