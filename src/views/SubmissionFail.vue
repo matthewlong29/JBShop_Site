@@ -23,7 +23,7 @@ export default {
 
 section {
   @extend %container;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   h1 {
     margin: 0;
   }
