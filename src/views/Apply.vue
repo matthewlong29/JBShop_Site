@@ -39,45 +39,101 @@
       >
     </label>
 
-    <!-- <h3>Citizenship</h3>
+    <h3>Citizenship</h3>
     <div class="radio">
-      <input type="radio" name="citizenship" value="US Citizen" id="us-citizen">
-      <label for="us-citizen">US Citizen</label>
+      <label>
+        <input
+          type="radio"
+          name="citizenship"
+          value="US Citizen"
+          @input="ev => form.citizenship = ev.target.value"
+        >
+        US Citizen
+      </label>
     </div>
     <div class="radio">
-      <input type="radio" name="citizenship" value="Foreign National" id="foreign-national">
-      <label for="foreign-national">Foreign National</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="citizenship"
+          value="Foreign National"
+          @input="ev => form.citizenship = ev.target.value"
+        >
+        Foreign National
+      </label>
+    </div>
 
-    <!-- <h3>Authorized to work in the USA?</h3>
+    <h3>Authorized to work in the USA?</h3>
     <div class="radio">
-      <input type="radio" name="authorizedToWork" value="Yes" id="authorizedToWork">
-      <label for="authorizedToWork">Yes</label>
+      <label>
+        <input
+          type="radio"
+          name="authorizedToWork"
+          value="Yes"
+          @input="ev => form.authorizedToWork = ev.target.value"
+        >
+        Yes
+      </label>
     </div>
     <div class="radio">
-      <input type="radio" name="authorizedToWork" value="No" id="notAuthorizedToWork">
-      <label for="notAuthorizedToWork">No</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="authorizedToWork"
+          value="No"
+          @input="ev => form.authorizedToWork = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
-    <!-- <h3>Have you ever been convicted of a felony?</h3>
+    <h3>Have you ever been convicted of a felony?</h3>
     <div class="radio">
-      <input type="radio" name="convictedOfAFelony" value="Yes" id="convictedOfAFelony">
-      <label for="convictedOfAFelony">Yes</label>
+      <label>
+        <input
+          type="radio"
+          name="convictedOfAFelony"
+          value="Yes"
+          @input="ev => form.convictedOfAFelony = ev.target.value"
+        >
+        Yes
+      </label>
     </div>
     <div class="radio">
-      <input type="radio" name="convictedOfAFelony" value="No" id="notConvictedOfAFelony">
-      <label for="notConvictedOfAFelony">No</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="convictedOfAFelony"
+          value="No"
+          @input="ev => form.convictedOfAFelony = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
-    <!-- <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
+    <h3>Have you ever worked for JB Long and Son Body Shop?</h3>
     <div class="radio">
-      <input type="radio" name="workedForJBLong" value="Yes" id="workedForJBLong">
-      <label for="workedForJBLong">Yes</label>
+      <label>
+        <input
+          type="radio"
+          name="workedForJBLong"
+          value="Yes"
+          @input="ev => form.workedForJBLong = ev.target.value"
+        >
+        Yes
+      </label>
     </div>
     <div class="radio">
-      <input type="radio" name="workedForJBLong" value="No" id="notWorkedForJBLong">
-      <label for="notWorkedForJBLong">No</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="workedForJBLong"
+          value="No"
+          @input="ev => form.workedForJBLong = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
     <div class="separator"></div>
     <h2>Education</h2>
@@ -91,16 +147,6 @@
       >
     </label>
 
-    <!-- <h3>Did you graduate from high school?</h3>
-    <div class="radio">
-      <input type="radio" name="highSchool" value="Yes" id="graduated">
-      <label for="graduated">Yes</label>
-    </div>
-    <div class="radio">
-      <input type="radio" name="highSchool" value="No" id="not-graduated">
-      <label for="not-graduated">No</label>
-    </div>-->
-
     <label>
       Other Education
       <input
@@ -109,6 +155,30 @@
         @input="ev => form.otherEducation = ev.target.value"
       >
     </label>
+
+    <h3>Did you graduate from high school?</h3>
+    <div class="radio">
+      <label>
+        <input
+          type="radio"
+          name="highSchoolGraduate"
+          value="Yes"
+          @input="ev => form.highSchoolGraduate = ev.target.value"
+        >
+        Yes
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input
+          type="radio"
+          name="highSchoolGraduate"
+          value="No"
+          @input="ev => form.highSchoolGraduate = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
     <div class="separator"></div>
     <h2>References</h2>
@@ -275,25 +345,29 @@
       >
     </label>
 
-    <!-- <h3>May we contact your previous supervisor for a reference?</h3>
+    <h3>May we contact your previous supervisor for a reference?</h3>
     <div class="radio">
-      <input
-        type="radio"
-        name="employmentOneContact"
-        value="Yes"
-        id="contact-previous-supervisor-one"
-      >
-      <label for="contact-previous-supervisor-one">Yes</label>
+      <label>
+        <input
+          type="radio"
+          name="employmentOneContact"
+          value="Yes"
+          @input="ev => form.employmentOneContact = ev.target.value"
+        >
+        Yes
+      </label>
     </div>
     <div class="radio">
-      <input
-        type="radio"
-        name="employmentOneContact"
-        value="No"
-        id="not-contact-previous-supervisor-one"
-      >
-      <label for="not-contact-previous-supervisor-one">No</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="employmentOneContact"
+          value="No"
+          @input="ev => form.employmentOneContact = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
     <h3>Employment Two</h3>
     <label>
@@ -359,25 +433,29 @@
       >
     </label>
 
-    <!-- <h3>May we contact your previous supervisor for a reference?</h3>
+    <h3>May we contact your previous supervisor for a reference?</h3>
     <div class="radio">
-      <input
-        type="radio"
-        name="employmentTwoContact"
-        value="Yes"
-        id="contact-previous-supervisor-one"
-      >
-      <label for="contact-previous-supervisor-one">Yes</label>
+      <label>
+        <input
+          type="radio"
+          name="employmentTwoContact"
+          value="Yes"
+          @input="ev => form.employmentTwoContact = ev.target.value"
+        >
+        Yes
+      </label>
     </div>
     <div class="radio">
-      <input
-        type="radio"
-        name="employmentTwoContact"
-        value="No"
-        id="not-contact-previous-supervisor-one"
-      >
-      <label for="not-contact-previous-supervisor-one">No</label>
-    </div>-->
+      <label>
+        <input
+          type="radio"
+          name="employmentTwoContact"
+          value="No"
+          @input="ev => form.employmentTwoContact = ev.target.value"
+        >
+        No
+      </label>
+    </div>
 
     <div class="separator"></div>
     <h2>Disclaimer and Signature</h2>
@@ -437,6 +515,7 @@ export default {
         workedForJBLong: "",
         highSchool: "",
         otherEducation: "",
+        highSchoolGraduate: "",
         referenceOneFirstName: "",
         referenceOneLastName: "",
         referenceOneRelationship: "",
@@ -484,9 +563,6 @@ export default {
      * handleSubmit.
      */
     handleSubmit(e) {
-      console.log(this.form);
-      console.log(this.form.firstName);
-      console.log(this.form.lastName);
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
