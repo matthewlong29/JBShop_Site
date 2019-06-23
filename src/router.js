@@ -34,5 +34,20 @@ export default new Router({
       path: "/*", // if no path before this one is found redirect to home
       redirect: "/"
     }
-  ]
+  ],
+  /**
+   * scrollBehavior: enables jumping to hash. the y offset is for consideration of the header height.
+   */
+  scrollBehavior(to, from, savedPosition) {
+    console.log(to, from);
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        offset: { x: 0, y: 172 }
+      };
+    }
+  }
 });

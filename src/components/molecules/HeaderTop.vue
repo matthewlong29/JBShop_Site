@@ -1,6 +1,6 @@
 <template>
   <div class="header-top">
-    <router-link to="/">
+    <router-link to="/#home">
       <h1>JB Long and Son Body Shop</h1>
     </router-link>
     <div>
