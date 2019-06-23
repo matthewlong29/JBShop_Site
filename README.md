@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0163b55c-dce4-45b3-8c6f-65a326918f4f/deploy-status)](https://app.netlify.com/sites/jb-long-and-son-body-shop/deploys)
 
+JB Long and Son Body Shop is a family owned and operated body should located in Frankfort, Kentucky.
+
 ## Project setup
 
 ```
