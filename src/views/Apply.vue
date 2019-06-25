@@ -494,7 +494,7 @@
 
 <script>
 import Button from "@/components/atoms/Button";
-// import router from "../router";
+import router from "../router";
 
 export default {
   name: "Apply",
@@ -568,7 +568,7 @@ export default {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
           "form-name": "job-application",
-          ...this.form
+          form
         })
       })
         .then(() => {
