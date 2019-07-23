@@ -1,0 +1,18 @@
+// colors
+$red: #f25f5c;
+$yellow: #ffe066;
+$blue: #247ba0;
+$green: #70c1b3;
+$white: #ffffff;
+$gray: #50514f;
+$black: #000000;
+
+$titleFont: "Roboto", sans-serif;
+$bodyFont: "Open Sans", sans-serif;
+
+@mixin userSelect ($arg) {
+  -webkit-user-select: $arg;
+  -moz-user-select: $arg;
+  -ms-user-select: $arg;
+  user-select: $arg;
+}
