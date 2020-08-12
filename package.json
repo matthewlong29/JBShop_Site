@@ -15,7 +15,7 @@
     "npm": "^6.9.0",
     "vue": "^2.6.6",
     "vue-lazyload": "^1.2.6",
-    "vue-router": "^3.0.1",
+    "vue-router": "^3.4.3",
     "vue2-google-maps": "^0.10.6"
   },
   "devDependencies": {
