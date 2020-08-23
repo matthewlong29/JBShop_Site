@@ -59,7 +59,6 @@ export default {
   align-items: center;
   width: 100vw;
   .max-width {
-    width: 100%;
   }
   .content-container {
     @extend %container;

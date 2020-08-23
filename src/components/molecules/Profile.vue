@@ -80,13 +80,12 @@ export default {
 }
 
 .profile-card {
-  flex: 1 1 330px;
+  flex: 1 1 360px;
   transform: rotateY(0deg);
   perspective: 1500px;
   height: 300px;
   position: relative;
   transition: box-shadow ease-in-out 0.25s;
-  max-width: 358px;
   .front,
   .back {
     border-radius: 8px;
