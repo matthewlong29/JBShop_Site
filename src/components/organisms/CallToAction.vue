@@ -1,15 +1,17 @@
 <template>
   <section class="call-to-action">
-    <div class="content-container">
-      <h2>
-        <strong>Walk-ins</strong> are always welcome!
-      </h2>
-      <h3>
-        or
-        <strong>Call now</strong> to book an appointment!
-      </h3>
-      <p>If you're in need of collision repair, rest assured that we focus on superior quality and premier customer service! If you're still unsure don't hesitate in calling now to get a <strong>free</strong> estimate at your convenience!</p>
-      <Button link="tel:5026954477" topText="(502) 695-4477" bottomText="Call now!" icon="phone"/>
+    <div class="max-width">
+      <div class="content-container">
+        <h2>
+          <strong>Walk-ins</strong> are always welcome!
+        </h2>
+        <h3>
+          or
+          <strong>Call now</strong> to book an appointment!
+        </h3>
+        <p>If you're in need of collision repair, rest assured that we focus on superior quality and premier customer service! If you're still unsure don't hesitate in calling now to get a <strong>free</strong> estimate at your convenience!</p>
+        <Button link="tel:5026954477" topText="(502) 695-4477" bottomText="Call now!" icon="phone"/>
+      </div>
     </div>
     <div class="image-container" :style="{height: `${contentHeight + (contentHeight / 5)}px`}"></div>
   </section>
@@ -56,6 +58,9 @@ export default {
   display: flex;
   align-items: center;
   width: 100vw;
+  .max-width {
+    width: 100%;
+  }
   .content-container {
     @extend %container;
     display: flex;
@@ -64,6 +69,7 @@ export default {
     align-items: flex-start;
     padding: 1rem 5rem;
     min-height: 300px;
+    width: 100%;
     background: repeating-linear-gradient(
       -55deg,
       lighten($color: $red, $amount: 15),
