@@ -4,7 +4,6 @@
     <Services id="about"/>
     <CallToAction id="call-to-action"/>
     <MeetUs id="team"/>
-    <NowHiring id="jobs"/>
     <ImageGallerySlider id="image-gallery"/>
     <GoogleMaps id="google-maps"/>
   </div>
