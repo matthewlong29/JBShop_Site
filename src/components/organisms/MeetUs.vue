@@ -57,7 +57,6 @@ section {
   margin-top: 5rem;
   .team {
     display: flex;
-    flex-wrap: wrap;
     .member {
       margin: 16px;
     }
